@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Matt's Site</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <script type="text/javascript" defer="" src="js/clock.js"></script>
+    <script type="text/javascript" defer="" src="js/mobile.js"></script>
+    <script type="text/javascript" defer="" src="js/portjs.js"></script>
+    <script type="text/javascript" defer="" src="js/words.js"></script>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <!-- FONT LINK -->
+    <script src="https://use.fontawesome.com/b406684c95.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar fixed-top"
+        id="navigation"
+        onmouseover="Hovering()"
+        onmouseout="NotHovering()"
+      >
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-transparent-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+
+        <div class="hello-container">
+          <!-- <h2 class="title_t" id="title-t">HELLO THERE</h2>
+           -->
+          <div class="title_t"></div>
+          <img class="kenobi" src="images/hello-star-wars.gif" />
+        </div>
+
+        <div id="slash"></div>
+        <div class="nav" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link"
+            id="nav-home-tab"
+            href="index.html"
+            role="tab"
+            >HOME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            href="aboutme.html"
+            role="tab"
+            >ABOUT ME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-project-tab"
+            href="projects.html"
+            role="tab"
+            >PORTFOLIO</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            href="contact.html"
+            role="tab"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+
+      <!--MOBILE MENU-->
+      <nav id="nav" class="m_nav" role="navigation">
+        <!-- ACTUAL NAVIGATION MENU -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-transparent-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+          hidden
+        >
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutme.html" class="nav__link">ABOUT ME</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!--  Home Page Intro -->
+      <div id="intro-container" class="container">
+        <div class="intro-container">
+          <div class="text_move">
+            <p id="hereto">HERE TO</p>
+            <p>
+              <span class="word wisteria">LEARN</span>
+              <span class="word belize">DESIGN</span>
+              <span class="word pomegranate">RESEARCH</span>
+              <span class="word green">IMPROVE</span>
+            </p>
+          </div>
+
+          <div class="space"></div>
+        </div>
+      </div>
+      <!--Intro-->
+      <div class="h-intro">
+        <div class="h-container">
+          <div class="i-logo">
+            <img
+              src="images/logo-icon-white-design.png"
+              id="logo-i"
+              alt=" logo image"
+            />
+            <img
+              src="images/logo-icon-dark-design.png"
+              id="icon-mobile"
+              alt=" logo image"
+            />
+          </div>
+          <!--Skills Container-->
+          <div class="skills-container">
+            <!-- <div class="skills-title">
+              <h1 id="skills-title">MY SKILLS</h1>
+            </div> -->
+
+            <div class="skills-contenedor">
+              <div class="category" id="starting">
+                <h2>Learning</h2>
+                <div class="skills">
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fa-brands fa-node-js"
+                        data-icon="Node"
+                        title="Node.js"
+                      ></i>
+                    </div>
+                    <p>Node.js</p>
+                  </div>
+                  <div class="skill">
+                    <div class="icon">
+                      <i class="fa-brands fa-angular"></i>
+                    </div>
+                    <p>Angular</p>
+                  </div>
+                  <div class="skill">
+                    <div class="icon">
+                      <img
+                        class="tailwind-css"
+                        src="images/tailwind-css.png"
+                        alt=""
+                      />
+                    </div>
+                    <p style="align-self: center">Tailwind</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category" id="learning">
+                <h2>Basic</h2>
+                <div class="skills">
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fab fa-vuejs"
+                        data-icon="vue"
+                        title="Vue.js"
+                      ></i>
+                    </div>
+                    <p>Vue/Vuetify</p>
+                  </div>
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fab fa-js"
+                        data-icon="js"
+                        title="JavaScript"
+                      ></i>
+                    </div>
+                    <p>JS</p>
+                  </div>
+
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fab fa-sketch"
+                        data-icon="sketch"
+                        title="UX"
+                      ></i>
+                    </div>
+                    <p>UX Experience</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category" id="advanced">
+                <h2>Advanced</h2>
+                <div class="skills">
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fab fa-sketch"
+                        data-icon="sketch"
+                        title="UX"
+                      ></i>
+                    </div>
+                    <p>UX Design</p>
+                  </div>
+                  <div class="skill">
+                    <div class="icon">
+                      <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    </div>
+                    <p>HTML</p>
+                  </div>
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fab fa-css3-alt"
+                        data-icon="css"
+                        title="CSS"
+                      ></i>
+                    </div>
+                    <p>CSS</p>
+                  </div>
+                  <div class="skill">
+                    <div class="icon">
+                      <i
+                        class="fab fa-figma"
+                        data-icon="figma"
+                        title="Figma"
+                      ></i>
+                    </div>
+                    <p>Figma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="h-text">
+              <span class="popuptext" id="myPopup"></span>
+
+              Welcome to this part of the net! I'm Matias, a UX Designer and 
+              here you can find everything you need to know about me. From student to professional projects and some bits about me. 
+              What you will do with this information is up to you. Use it wisely!
+            </p>
+          </div> -->
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- CASE STUDIES -->
+
+      <div class="container-slider">
+        <div class="int-c">
+          <div class="home-case">
+            <div class="i-logo">
+              <img
+                src="images/logo-icon-dark-design.png"
+                id="icon-dark"
+                alt=" logo image"
+              />
+            </div>
+            <h1 id="int-t">CASE STUDIES</h1>
+          </div>
+          <section class="page-wrap img-week" id="cs">
+            <div id="slider-container" class="slider-container">
+              <!--JOINT EFFORTS-->
+              <a
+                href="comingsoon.html"
+                class="vid_cont"
+                id="joint-container"
+                target="_blank"
+              >
+                <div class="web-content">
+                  <div class="txt">
+                    <div class="txt2 w-46 col-5" id="text9">
+                      <p>
+                        Surveys Dashboard designed to cater to healthcare
+                        professionals, providing a comprehensive view of their
+                        data utilization and emphasizing the significance of
+                        survey participation
+                      </p>
+                    </div>
+                    <div class="des-icons">
+                      <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                      <i
+                        class="fab fa-css3-alt"
+                        data-icon="css"
+                        title="CSS"
+                      ></i>
+                      <i
+                        class="fab fa-js"
+                        data-icon="js"
+                        title="JavaScript"
+                      ></i>
+                      <i
+                        class="fab fa-figma"
+                        data-icon="figma"
+                        title="Figma"
+                      ></i>
+                    </div>
+                    <h3>JOINT EFFORTS</h3>
+                  </div>
+                </div>
+                <div class="empty"></div>
+              </a>
+
+              <!--LOGICHAINGE-->
+              <a
+                href="logichainge.html"
+                class="vid_cont"
+                id="logi-container"
+                target="_blank"
+              >
+                <div class="web-content">
+                  <div class="txt">
+                    <div class="txt2 w-46 col-5" id="text9">
+                      <p>
+                        Our objective was to develop a Groupage Transportation
+                        Management System (TMS) and streamline this operation as
+                        an additional feature integrated into our established
+                        SaaS platform
+                      </p>
+                    </div>
+                    <div class="des-icons">
+                      <i
+                        class="fab fa-vuejs"
+                        data-icon="vue"
+                        title="Vue.js"
+                      ></i>
+                      <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                      <i
+                        class="fab fa-css3-alt"
+                        data-icon="css"
+                        title="CSS"
+                      ></i>
+                      <i
+                        class="fab fa-js"
+                        data-icon="js"
+                        title="JavaScript"
+                      ></i>
+                      <i
+                        class="fab fa-figma"
+                        data-icon="figma"
+                        title="Figma"
+                      ></i>
+                    </div>
+                    <h3>LOGICHAINGE</h3>
+                  </div>
+                </div>
+                <div class="empty"></div>
+              </a>
+
+              <!--MARKR-->
+              <a
+                href="Pizarra_Blog/index.html"
+                target="_blank"
+                class="vid_cont"
+                id="markr-container"
+              >
+                <div class="web-content">
+                  <div class="txt">
+                    <div class="txt2 w-46 col-5" id="text8">
+                      <p>
+                        An advanced Brand Guide System creator and editing tool
+                        designed to efficiently manage multiple Brand Guides
+                        simultaneously
+                      </p>
+                    </div>
+                    <div class="des-icons">
+                      <i
+                        class="fab fa-vuejs"
+                        data-icon="vue"
+                        title="Vue.js"
+                      ></i>
+                      <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                      <i
+                        class="fab fa-css3-alt"
+                        data-icon="css"
+                        title="CSS"
+                      ></i>
+                      <i
+                        class="fab fa-js"
+                        data-icon="js"
+                        title="JavaScript"
+                      ></i>
+                      <i
+                        class="fab fa-figma"
+                        data-icon="figma"
+                        title="Figma"
+                      ></i>
+                    </div>
+                    <h3>MARKR. TOOL</h3>
+                  </div>
+                </div>
+                <div class="empty"></div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!--Cards-->
+      <!-- <div class="c-cards">
+        <div class="card">
+          <div class="img">
+            <img src="images/weyweyweb.png" />
+          </div>
+          <div class="top-text">
+            <div class="name">Events</div>
+            <p>Where I go</p>
+          </div>
+          <div class="bottom-text">
+            <div class="text">
+              Conventions, Design events and more, here you will find some of
+              the events I have been part to and attended in the last few years.
+            </div>
+            <div class="btn">
+              <a href="aboutme.html#events">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/IMG_20210716_145437.jpg" />
+          </div>
+          <div class="top-text">
+            <div class="name">About me</div>
+            <p>Geek at heart</p>
+          </div>
+          <div class="bottom-text">
+            <div class="text">
+              Fun is only the first step to happiness, and I always make sure to
+              have some fun before going to bed. What is life if you don't enjoy
+              yourself?
+            </div>
+            <div class="btn">
+              <a href="aboutme.html">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="images/Markr_0.png" />
+          </div>
+          <div class="top-text">
+            <div class="name">Projects</div>
+            <p>UX Design/FED</p>
+          </div>
+          <div class="bottom-text">
+            <div class="text">
+              Here we can find the various projects I have been part of or I
+              have worked on as a Front End Developer. It is a constantly
+              updating section so keep an eye on it!
+            </div>
+            <div class="btn">
+              <a href="projects.html">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-c1">
+          <div class="footer-logo">
+            <img src="images/logo-design.png" alt="Logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="projects.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="foot">
+          <!--DAYS OF THE WEEK-->
+          <div id="days-of-week" class="footer-days">
+            <!-- Days of the week will be inserted dynamically -->
+          </div>
+
+          <div class="fl">
+            <div class="spacer"></div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/the_gamerlands/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/matias-flores-93673394/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="copyMatt">&copy; Matias Flores <span id="year"></span></span>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/dd1d486564.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

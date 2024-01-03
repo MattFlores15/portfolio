@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+   
+
+    <script type="text/javascript" defer="" src="js/clock.js"></script>
+    <script type="text/javascript" defer="" src="js/mobile.js"></script>
+    <script type="text/javascript" defer="" src="js/about.js"></script>
+
+
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <!-- FONT LINK -->
+    <script src="https://use.fontawesome.com/b406684c95.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Matt's Site</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar fixed-top"
+        id="navigation"
+        onmouseover="Hovering()"
+        onmouseout="NotHovering()"
+      >
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+
+        <div class="hello-container">
+          <!-- <h2 class="title_t" id="title-t">HELLO THERE</h2> -->
+          <div class="title_t"></div>
+          <img class="kenobi" src="images/hello-star-wars.gif" />
+        </div>
+
+        <div id="slash"></div>
+        <div class="nav" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link"
+            id="nav-home-tab"
+            href="index.html"
+            role="tab"
+            >HOME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            href="aboutme.html"
+            role="tab"
+            >ABOUT ME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-project-tab"
+            href="projects.html"
+            role="tab"
+            >PORTFOLIO</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            href="contact.html"
+            role="tab"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+
+      <!--MOBILE MENU-->
+      <nav id="nav" class="m_nav" role="navigation">
+        <!-- ACTUAL NAVIGATION MENU -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+          hidden
+        >
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutme.html" class="nav__link">ABOUT ME</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Background Video-->
+      <div id="videowrapper">
+        <div id="fullScreenDiv">
+          <video
+            id="video"
+            role="presentation"
+            preload="auto"
+            playsinline=""
+            crossorigin="anonymous"
+            loop=""
+            muted=""
+            autoplay=""
+            class="blur"
+          >
+            <source src="images/production ID 3922709.webm" type="video/webm" />
+            <source src="images/production ID 3922709.mp4" type="video/mp4" />
+          </video>
+          <div id="videoMessage" class="styling">
+            <h1 id="about_me">WHAT ABOUT ME?</h1>
+            <!-- <h2 id="about_me2">A little dive into my life</h2> -->
+          </div>
+        </div>
+      </div>
+
+      <article class="aboutme">
+
+
+        
+        
+        <!-- <div class="skills-container">
+          <div class="skills-title">
+            <h1 id="skills-title">MY SKILLS</h1>
+          </div>
+          <div class="skills">
+            <div class="chart-container">
+              <div class="chart">
+                <div class="bars">
+                  <div class="icon"><i class="fab fa-figma" data-icon="figma" title="Figma"></i></div>
+                  <div class="bar" id="figma">
+                  <span class="label">Figma</span>
+                </div>
+                </div>
+                <div class="bars">
+                  <div class="icon"><i class="fab fa-vuejs" data-icon="vue" title="Vue.js"></i></div>
+                  <div class="bar" id="vue">
+                  <span class="label">Vue/Vuetify</span>
+                </div>
+                </div>         
+                <div class="bars">
+                  <div class="icon"><i class="fas fa-laptop-code" data-icon="ts" title="TypeScript"></i></div>
+                  
+                  <div class="bar" id="typescript">
+                  <span class="label">TypeScript</span>
+                </div>
+                </div>
+                <div class="bars">
+                  <div class="icon"><i class="fab fa-js" data-icon="js" title="JavaScript"></i></div>
+                  
+                  <div class="bar" id="javascript">
+                  <span class="label">JavaScript</span>
+                </div>
+                </div>
+                <div class="bars">
+                  <div class="icon"><i class="fab fa-html5" data-icon="html" title="HTML"></i></div>
+                  
+                  <div class="bar" id="html">
+                  <span class="label">HTML</span>
+                </div>
+                </div>
+                <div class="bars">
+                  <div class="icon"><i class="fab fa-css3-alt" data-icon="css" title="CSS"></i></div>
+                  
+                  <div class="bar" id="css">
+                  <span class="label">CSS</span>
+                </div>
+                </div>
+                <div class="bars">
+                  <div class="icon"><i class="fab fa-sketch" data-icon="sketch" title="UX"></i></div>
+                  
+                  <div class="bar" id="ux">
+                  <span class="label">UX Design</span>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> -->
+        
+      
+
+      <!-- First Container -->
+      <article>
+        <div class="cont1">
+          <!-- <h1 id="title1">NAVIGATING DESIGN DIVERSITY</h1> -->
+          <!-- <div class="img-hover-zoom img-hover-zoom--blur" id="matt-intro">
+                <img
+                  src="images/b&w.jpg"
+                  class="img-responsive img-circle margin"
+                  alt="logo"
+                  width="450"
+                  height="auto"
+                />
+              </div> -->
+          <div class="row" id="r2">
+            <div class="who-elements slide-left-to-right" >
+             
+              <div class="textme col-8">
+                <p>
+                  Hello, I'm Matias, but you can call me Matt. Currently based in the Netherlands, 
+                  I am on an exciting journey to uncover my true passion as a UX Designer and Front-End Developer.
+                </br>
+                </br>
+                  Originally from Chile, I've had the privilege of calling Argentina and Spain my homes 
+                  before settling in the Netherlands. This diverse background has shaped me into a truly 
+                  multicultural individual, fostering an open-minded and resourceful approach to design. 
+                  Living across borders has given me a unique perspective on the fluidity of ideas and the 
+                  beauty that emerges when cultures converge.
+                </br>
+                </br>
+                  Above all, my family is my anchor. Raised by my incredible mother and big sister, they 
+                  have been my mentors, guiding me through life's twists and turns. Their wisdom has not 
+                  only influenced my personal values but has also significantly impacted my design philosophy. 
+                  Their lessons on resilience and compassion reflect in my work, infusing it with a human-centric touch.
+                </p>
+                </br>
+                </br>
+                <a id="resume-button" href="./Matt-Eng.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              </div>
+              <div class="about-photos">
+               
+              <div class="img-hover-zoom img-hover-zoom--blur">
+                <img
+                  src="images/me-madrid.jpg"
+                  class="img-responsive img-circle margin"
+                  alt="logo"
+                  width="650"
+                  height="auto"
+                />
+              </div>
+              <!-- <div class="img-hover-zoom img-hover-zoom--blur">
+                <img
+                  src="images/IMG-20210418-WA0001.jpg"
+                  class="img-responsive img-circle margin"
+                  alt="logo"
+                  width="450"
+                  height="450"
+                />
+              </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row" id="r2">
+            <div class="who-elements slide-right-to-left" id="row2">
+              <div class="textme2 col-8">
+                <p>
+                  The second thing about me is that I'm quite the multicultural
+                  guy. I was born in Chile, raised between Argentina and Spain
+                  and now living in the Netherlands. Having lived in so many
+                  different places has allowed me to be more open-minded and
+                  resourceful, while also keeping me grounded on the reality of
+                  what borders truly mean.
+                </p>
+              </div>
+
+              <div class="img-hover-zoom img-hover-zoom--blur">
+                <img
+                  src="images/FB_IMG_1568752544675.jpg"
+                  class="img-responsive img-circle margin"
+                  alt="logo"
+                  width="450"
+                  height="auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="r3">
+            <div class="who-elements slide-left-to-right2">
+              <div class="img-hover-zoom img-hover-zoom--blur">
+                <img
+                  src="images/IMG-20210418-WA0001.jpg"
+                  class="img-responsive img-circle margin"
+                  alt="logo"
+                  width="450"
+                  height="450"
+                />
+              </div>
+              <div class="textme3 col-8">
+                <p>
+                  Last but not least is that my family is everything to
+                  me. My mother and my big sister thought me everything I know
+                  about life and how to handle myself in hard times. I would not
+                  be the same as I am now without them.
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      <hr class="section-divider" />
+
+      <!--EVENTS-->
+      <div class="cont3" id="events">
+      <div class="media_bts">
+        <h1>EVENTS</h1>
+
+        <div class="bts1">
+          <p id="bts_t" style="text-align: left;">Immersed in 2 days of cutting-edge insights at the UI design conference. 
+            Explored the pulse of web technologies, delving into web programming, UX/UI design, 
+            product design, mobile development, and more. 
+            </br>
+            </br>
+            A convergence of UI enthusiasts and professionals 
+            sharing diverse perspectives on architectures, methodologies, and best practices.          
+          </p>  
+          <div class="bts_gal" id="btsg">
+            <div class="bts_img" id="btsimg">
+              <img class="bts" src="images/weyweyweb.png" alt="behind the scenes 1">
+            </div>
+
+            <div class="bts_img" id="btsimg2">
+              <img class="bts" src="images/weyweyweb.jpg" alt="behind the scenes 1">
+            </div>
+
+            <div class="bts_img" id="btsimg3">
+              <img class="bts" src="images/luis-majano-weyweyweb23-05.webp" alt="behind the scenes 1">
+            </div>
+
+            <div class="bts_img" id="btsimg3">
+              <img class="bts" src="images/malaga-dinner.jpg" alt="behind the scenes 1">
+            </div>
+          </div>
+        </div>
+
+        <div class="bts1">  
+          <div class="bts_gal" id="btsg2">
+            <div class="bts_img" id="btsimg">
+              <img class="bts" src="images/Dutch+Desin+Week+Eindhoven-4174453031.jpg" alt="behind the scenes 1">
+            </div>
+
+            <div class="bts_img" id="btsimg2">
+              <img class="bts" src="images/ddw-poem.jpg" alt="behind the scenes 1">
+            </div>
+
+            <div class="bts_img" id="btsimg3">
+              <img class="bts" src="images/ddw-art.jpg" alt="behind the scenes 1">
+            </div>
+
+            <div class="bts_img" id="btsimg3">
+              <img class="bts" src="images/packet-run.jpeg" alt="behind the scenes 1">
+            </div>
+          </div>
+          <p id="bts_t" style="text-align: right;">Exploring the future through the lens of imagination at Dutch Design Week 2023. 
+            DDW23's theme 'Picture This' not only sparks creative visions but emphasizes the power of 
+            design to guide us toward a positive future. 
+          </br>
+          </br>
+            As a UX designer, witnessing diverse perspectives 
+            and innovative solutions across 110 locations was an inspiring journey of aesthetic prowess and meaningful impact. 
+          </p>
+        </div>
+      </div>
+        </div>
+
+      <hr class="section-divider" />
+
+        <!--HOBBIES-->
+        <div class="cont2" id="hobbies">
+          <h1>HOBBIES</h1>
+          <div id="cont-hob">
+            <div class="container-me" id="me1">
+              <img src="images/IMG_20191118_183131_948.jpg" alt="" />
+              <div class="me-texts">
+              <span class="title-me">Globetrotter</span>
+              <span class="text-me"
+                >Explored 14 countries and counting – my love for travel knows no bounds!</span>
+              </div>
+            </div>
+
+            <div class="container-me" id="me2" onclick="window.open('https://www.instagram.com/the_gamerlands/', '_blank')">
+              <img src="images/IMG_20210501_194626_286.jpg" alt="" />
+              <div class="me-texts">
+                <span class="title-me">Gamer & Geek</span>
+                <span class="text-me">Dive into my gaming passion on Instagram <i class="fa-brands fa-instagram" id="instagram" style="color: #E4405F"></i> where geek meets fun. Check it out!</span>
+              </div>
+            </div>
+
+            <div class="container-me" id="me3">
+              <img src="images/IMG_20190801_152509.jpg" alt="" />
+              <div class="me-texts">
+                <span class="title-me">Nature Enthusiast</span>
+              <span class="text-me"
+                >I find tranquility away from city chaos – my happy place is with nature, just me and the wind.</span>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!--GALLERY-->
+        <!-- <div class="cont3">
+          <h1 id="c3-title">MY ADVENTURES</h1>
+
+          <div class="container">
+            <div class="gallery"></div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-image-container">
+                  <img class="overlay-image" src="">
+                </div>
+                <p class="overlay-description"></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        </div>
+      </article>
+      </article>
+    </main>
+      
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-c1">
+          <div class="footer-logo">
+            <img src="images/logo-design.png" alt="Logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="projects.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="foot">
+          <!--DAYS OF THE WEEK-->
+          <div id="days-of-week" class="footer-days">
+            <!-- Days of the week will be inserted dynamically -->
+          </div>
+
+          <div class="fl">
+            <div class="spacer"></div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/the_gamerlands/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/matias-flores-93673394/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="copyMatt">&copy; Matias Flores <span id="year"></span></span>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script> -->
+     
+
+    <script>
+      var quadimages = document.querySelectorAll("#quad figure");
+          for(i=0; i<quadimages.length; i++) {
+            quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+          }
+
+          var quadimages = document.querySelectorAll("#quad2 figure");
+          for(i=0; i<quadimages.length; i++) {
+            quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+          }
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/dd1d486564.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

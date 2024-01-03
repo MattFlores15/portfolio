@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script type="text/javascript" defer="" src="js/logichainge.js"></script>
+    <script type="text/javascript" defer="" src="js/mobile.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+   
+
+    <!--My own CSS-->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/logichainge.css" />
+
+    <!-- FONT LINK -->
+    <script src="https://use.fontawesome.com/b406684c95.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Logichainge Case Study</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top" id="navigation">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+
+        <div class="hello-container">
+          <!-- <h2 class="title_t" id="title-t">HELLO THERE</h2> -->
+          <div class="title_t"></div>
+          <img class="kenobi" src="images/hello-star-wars.gif" />
+        </div>
+
+        <div id="slash"></div>
+        <div class="nav" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link"
+            id="nav-home-tab"
+            href="index.html"
+            role="tab"
+            >HOME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            href="aboutme.html"
+            role="tab"
+            >ABOUT ME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-project-tab"
+            href="projects.html"
+            role="tab"
+            >PORTFOLIO</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            href="contact.html"
+            role="tab"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+
+      <!--MOBILE MENU-->
+      <nav id="nav" class="m_nav" role="navigation">
+        <!-- ACTUAL NAVIGATION MENU -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+          hidden
+        >
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutme.html" class="nav__link">ABOUT ME</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <ul>
+        <li><a href="#project-overview">Overview</a></li>
+        <li><a href="#project-challenge">Challenge</a></li>
+        <li><a href="#project-process">Process</a></li>
+        <li><a href="#project-goals">Goals</a></li>
+        <li><a href="#project-research">Research</a></li>
+        <li><a href="#project-design">Design</a></li>
+        <li><a href="#project-development">Development</a></li>
+        <li><a href="#project-results">Results</a></li>
+        <li><a href="#project-conclusion">Conclusion</a></li>
+      </ul>
+    </div>
+
+    <main>
+
+     <!--Mobile show-hide button-->
+      <div class="toggle-btn" onclick="toggleSidebar()"><i id="sidebarIcon" class="fa-solid fa-angles-right"></i></div>
+
+      <!--Scroll Top button-->
+      <button onclick="topFunction()" class="Btn" id="myBtn" title="Go to top">
+        <img src="images/up-arrow.png" />
+      </button>
+
+      
+      <!-- Case Study Title -->
+      <div class="project-container">
+        <div class="project-icon-m">
+          <img src="images/icon-projects-design.png" alt="projects icon" />
+          <p>CASE STUDY</p>
+        </div>
+        <div class="project-title">
+          <h1>Groupage TMS System</h1>
+        </div>
+        <div class="project-subtitle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            color="#0A0C0E"
+            fill="currentColor"
+            class="bi bi-people-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+            />
+          </svg>
+          <h2 class="subtitle-client">Client:</h2>
+          <h2>Logichainge</h2>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+      <!--Project Basics-->
+      <section class="project-basics" id="project-basics">
+        <div class="empty"></div>
+        <div class="basics-container">
+          <div class="basics-role">
+            <h3>Role</h3>
+            <p>Front-End Developer</p>
+            <p>UX Designer</p>
+          </div>
+          <div class="basics-duration">
+            <h3>Duration</h3>
+            <p>5 months</p>
+          </div>
+          <div class="basics-type">
+            <h3>Type</h3>
+            <p>SaaS Platform</p>
+          </div>
+          <div class="basics-tech">
+            <h3>Tech</h3>
+            <div class="des-icons">
+              <i class="fab fa-vuejs" data-icon="vue" title="Vue.js"></i>
+              <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+              <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+              <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+              <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+            </div>
+          </div>
+          <div class="learning-outcomes"></div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Learning Outcomes -->
+      <section id="learning-outcomes">
+        <div class="project-outcomes">
+          <div class="outcomes-title">
+            <h2>Learning Outcomes</h2>
+          </div>
+          <div class="outcomes-container">
+            <div class="outcome" id="professional-duties">
+              <h3>Professional Duties</h3>
+              <p>You carry out the professional duties on a junior bachelor level resulting in professional products in line with the IT area you are working in.</p>
+            </div>
+            <div class="outcome" id="situation-orientation">
+              <h3>Situation-Orientation</h3>
+              <p>You apply your previously acquired knowledge and skills in an authentic context to deliver relevant results for the project and company.</p>
+            </div>
+            <div class="outcome" id="future-oriented">
+              <h3>Future-Oriented Organisation</h3>
+              <p>You explore the organizational context of your project, make business, sustainable, and ethical considerations, and manage all aspects of the execution of the project.</p>
+            </div>
+            <div class="outcome" id="investigative-problem">
+              <h3>Investigative Problem Solving</h3>
+              <p>You take a critical look at your project from different perspectives, identify problems, find an effective approach, and arrive at appropriate solutions.</p>
+            </div>
+            <div class="outcome" id="personal-leadership">
+              <h3>Personal Leadership</h3>
+              <p>You are entrepreneurial around your projects and personal development, paying attention to your own learning ability and career aspirations.</p>
+            </div>
+            <div class="outcome" id="targeted-interaction">
+              <h3>Targeted Interaction</h3>
+              <p>You determine which partners play a role in your project, collaborate constructively with them, and communicate appropriately to achieve the desired impact.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <hr class="section-divider" />
+
+      <!-- Project Overview -->
+      <section id="project-overview">
+        <div class="project-overview">
+          <!-- <div class="empty-s"></div> -->
+          <div class="overview">
+            <div class="overview-title"><h2>Overview</h2><div class="learning-outcomes"></div></div>
+            <div class="overview-intro-p">
+              <p>
+                Logichainge's SaaS platform intends to automate and streamline
+                the order process for logistics service providers. The platform
+                addresses the increasing administrative burdens experienced by
+                logistic companies, allowing planners to add value for
+                customers. With a self-learning module, the system enables fast
+                order entry regardless of the customer's preferred method (email and/or any attachment).
+                <br />
+                <br />
+
+                <p>As part of this platform, Logichanige entrusted me the task of
+                designing and developing their Groupage Transport Management System (TMS) module. 
+                The project involved designing and developing various elements, such as front-end flow, 
+                wireframes, final designs, integration with back-end API endpoints, 
+                and delivering high-quality, scalable code.
+                </p>
+
+                <br />
+                <br />
+                  <a
+                    href="https://www.logichainge.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Visit Logichainge's website</a>
+                </p>
+              </p>
+              <div class="image-overview"><div class="empty-xs"></div><img src="images/Logichainge-dashboard.png" alt="logichainge dashboard"></div>
+            </div>
+          </div>
+          <!-- <div class="empty"></div> -->
+        </div>
+        
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Challenge -->
+      <section id="project-challenge">
+        <div class="project-challenge">
+          <!-- <div class="empty-s"></div> -->
+          <div class="challenge">
+            <div class="challenge-title"><h2>Challenge</h2><div class="learning-outcomes"></div></div>
+            <div class="challenge-p">
+              <p>
+                The challenge of this project lies in automating and
+                streamlining the existing manual process of managing the
+                Groupage TMS. 
+                <br/>
+                <br/>
+                By consolidating the various
+                processes and approaches currently used by different customers
+                into one generic process within the platform, Logichainge aims
+                to provide logistics professionals, such as consolidators or
+                forwarders, with a more automated and efficient solution.
+              </p>
+              <br />
+              <br />
+              <div class="chal"><p>Key <p style="font-weight: 700; color: #008b8b;">challenges:</p></p></div>
+              <br />
+              <ul>
+                <li>Understanding the current manual processes and approaches used by different logistics professionals.</li>
+                <li>Balancing the need for automation with the flexibility to accommodate various order entry methods and formats.</li>
+                <li>Designing a user-friendly interface that accommodates the multi-lingual capabilities of the AI models and provides a consistent experience across different screens.</li>
+                <li>Coordinating with the ICT student responsible for delivering the back-end and API endpoints to ensure smooth integration and compatibility.</li>
+                <li>Incorporating customer/stakeholders feedback and iterating on the designs to meet the specific needs and preferences of logistics professionals.</li>
+                <li>Ensuring code quality, readability, and scalability for the long-term maintenance and future enhancements of the Groupage TMS System.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="empty"></div> -->
+        </div>
+        
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Process -->
+
+      <section id="project-process">
+
+        <div class="project-process">       
+          <div class="process">
+            <div class="process-title"><h2>Process</h2><div class="learning-outcomes"></div></div>
+            <div class="process-intro">
+              <p>The Groupage Transport Management System (TMS) project within Logichainge SaaS platform aims to automate and streamline the management of 
+                the groupage transport system for logistics professionals such as consolidators and forwarders. The existing problem identified by Logichainge 
+                is the lack of ICT support for simple tasks like shipment assignment and the inconsistency in processes and approaches to groupage management. 
+                As a UX designer and front-end developer, my role is to design and develop the front-end flow, wireframes, and final designs, as well as 
+                integrate the front-end with the back-end API endpoints.</p>
+            </div>
+            <div class="process-container">
+              <div class="process-development">
+                <h2>Development Process</h2>
+                <ol id="card-list">
+                  <li>
+                    <div class="card">
+                    <div class="card-header">
+                      <span class="card-number">1</span>
+                      <span class="card-subtitle">Research</span>
+                    </div>
+                    <div class="card-content">
+                      <p>
+                        Conduct a "MoSCoW" analysis to prioritize project elements based on their importance and feasibility. 
+                        Perform analytics research to identify efficient user interactions and align the product with the overall 
+                        Logichainge platform. Utilize secondary research to gain industry insights and understand client needs.
+                      </p>
+                    </div>
+                  </div>
+                  </li>
+
+                  <li>
+                    <div class="card">
+                    <div class="card-header">
+                      <span class="card-number">2</span>
+                      <span class="card-subtitle">Empathize & Define</span>
+                    </div>
+                    <div class="card-content">
+                      <p>
+                        Conduct user interviews with the client to understand their requirements and pain points. Use the gathered information to define the scope, goals, and user stories for the project.
+                      </p>
+                    </div>
+
+                    <li>
+                    <div class="card">
+                      <div class="card-header">
+                        <span class="card-number">3</span>
+                        <span class="card-subtitle">Prototype</span>
+                      </div>
+                      <div class="card-content">
+                        <p>
+                          Create wireframes and design concepts in Figma, considering the existing Logichainge platform's overall design. Validate and fine-tune the designs based on feedback from customers and stakeholders. Iterate on the designs until a satisfactory solution is achieved.
+                        </p>
+                      </div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card">
+                      <div class="card-header">
+                        <span class="card-number">4</span>
+                        <span class="card-subtitle">Development</span>
+                      </div>
+                      <div class="card-content">
+                        <p>
+                          Build the front-end pages using Vue.js, adhering to good coding practices, readability, and scalability. Collaborate closely with the back-end developer who will deliver the back-end and API endpoints. Integrate the front-end with the provided API endpoints, ensuring seamless data flow and functionality.
+                        </p>
+                      </div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card">
+                      <div class="card-header">
+                        <span class="card-number">5</span>
+                        <span class="card-subtitle">Testing</span>
+                      </div>
+                      <div class="card-content">
+                        <p>
+                          Conduct usability testing to identify and address any design flaws, improve user interaction, and ensure the product meets the client's needs. Perform comprehensive testing of all front-end pages to ensure proper functionality across different devices and browsers.
+                        </p>
+                      </div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card">
+                      <div class="card-header">
+                        <span class="card-number">6</span>
+                        <span class="card-subtitle">Completion</span>
+                      </div>
+                      <div class="card-content">
+                        <p>
+                          Deliver a high-quality, well-documented product that meets the requirements outlined in the project scope. Ensure the codebase is maintainable and scalable, adhering to industry best practices.
+                        </p>
+                      </div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card">
+                      <div class="card-header">
+                        <span class="card-number">7</span>
+                        <span class="card-subtitle">Reflection</span>
+                      </div>
+                      <div class="card-content">
+                        <p>
+                          Reflect on the project and identify areas for improvement. Document the lessons learned and apply them to future projects.
+                        </p>
+                      </div>
+                    </div>
+                    </li>
+                </ol>
+              </div>
+              <div class="process-timeline">
+                
+
+                <!--TRELLO BOARD-->
+
+                <div id="trello-container">
+                  <!-- <h2 id="trello-title">OUR WORK</h2> -->
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <div class="timeline-number">0</div>
+                      <div class="timeline-content">Problem analysis <br/> orientation</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">1</div>
+                      <div class="timeline-content">Research</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">2</div>
+                      <div class="timeline-content">Empathize & Define</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">3</div>
+                      <div class="timeline-content">Prototype</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">4</div>
+                      <div class="timeline-content">Development</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">5</div>
+                      <div class="timeline-content">Testing</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">6</div>
+                      <div class="timeline-content">Completion</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-number">7</div>
+                      <div class="timeline-content">Report<br/> Evaluation</div>
+                    </div>
+                  </div>
+                  <iframe class="trello" src="https://trello.com/b/Xy9bxvH2.html" frameborder="1"></iframe>
+                </div>
+              </div>
+            </div>
+
+            
+            
+          </div>
+        </div>
+        
+      </section>
+      
+
+
+      <hr class="section-divider" />
+
+      <!-- Project Goals -->
+      <section id="project-goals">
+        <div class="project-goals">
+          <div class="goals-container">
+            <div class="goals-title"><h2>Goals</h2><div class="learning-outcomes"></div></div>
+            <div class="goals-p">
+              <p>
+                The goals for the Groupage TMS system within Logichainge SaaS platform have been set to address the identified problem of 
+                lacking ICT support for Groupage management and the need for automation and streamlining in the logistics industry. 
+                These goals directly impact the project by guiding its design and development.
+              </p>
+              <br />
+              <p>
+                 They are aimed at revolutionizing the logistics industry by providing a unified and efficient process for managing Groupage transport. 
+                 By automating manual tasks, streamlining user experience, and integrating advanced features, this project aims to simplify logistics professionals' workflow, 
+                 reduce administrative burdens, and enhance operational efficiency. Through scalability, integration, analytics, continuous improvement, and comprehensive documentation, 
+                 this project will establish a future-proof system that meets evolving industry needs and promotes knowledge sharing for sustained growth.
+              </p>
+            </div>
+            <div class="goals">
+              <h3>Short Term</h3>
+              <ul>
+
+              <li><h4>Consolidation:</h4><p>Create a unified and generic process for managing the groupage transport system within the Logichainge platform. This involves understanding the different existing processes used by clients and streamlining them into a single efficient workflow.</p></li>
+
+              <li><h4>Automation:</h4><p>Develop automated features that eliminate the need for manual tasks in the groupage transport system. This includes automating order processing, tracking, and documentation, reducing the reliance on manual labor.</p></li> 
+
+              <li><h4>Streamlined User Experience:</h4><p> Design and implement a user-friendly interface specifically tailored to logistics professionals using the groupage transport system. The system should be intuitive, easy to navigate, and provide relevant information at each step of the process.</p></li>
+
+              <li><h4>Efficient Order Entry:</h4><p>Enhance the order entry process by integrating the self-learning module from the SaaS platform. Enable fast and accurate order entry regardless of the order source, such as email or attachments. This should minimize the time and effort required for logistics professionals to input order details.</p></li>
+              </ul>
+
+              <h3 class="goals-long">Long Term</h3>
+
+              <ul class="goals-long-ul">
+              <li><h4>Scalability:</h4><p> Ensure the developed Groupage TMS System can handle a growing number of clients and increased order volumes. The system should be scalable, capable of accommodating a large customer base without sacrificing performance.</p></li>
+
+              <li><h4>Integration:</h4><p> Enable seamless integration of the Groupage TMS System with other logistics systems and platforms used by clients. This includes integrating with third-party logistics providers, payment gateways, and other relevant systems to create a comprehensive logistics ecosystem.</p></li>
+
+              <li><h4>Advanced Analytics and Reporting:</h4><p>Implement advanced analytics capabilities within the Groupage TMS System to provide valuable insights and reporting functionalities. This allows logistics professionals to make data-driven decisions, optimize routes, analyze costs, and improve overall operational efficiency.</p></li>
+
+              <li><h4>Continuous Improvement:</h4><p>Establish a feedback loop with customers and actively incorporate their input to enhance the Groupage TMS System. Continuously refine and fine-tune the system based on customer feedback, evolving industry requirements, and emerging technologies.</p></li>
+
+              <li><h4>Documentation and Knowledge Sharing:</h4><p>Develop comprehensive documentation for the Groupage TMS System, including user guides, API documentation, and technical references. This promotes knowledge sharing, facilitates system maintenance, and ensures the system is well-documented for future updates and enhancements.</p></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+      </section> 
+
+
+      <hr class="section-divider" />
+
+      <!--Project Research-->
+      <section id="project-research">
+        <div class="project-research">
+          <div class="research-card">
+            <div class="research-title"><h2>Research</h2> <div class="learning-outcomes"></div></div>
+
+          <div class="section">
+            <h3>Introduction</h3>
+            <p>The research phase aims to gather valuable insights to inform the design and development of the project. 
+              It involves various research methods and techniques to ensure a successful outcome. In order to understand the industry, the transport system 
+            and the short-comings of this type of TMS, we conducted extensive research across the multiple elements that conceptualize this kind of project.</p>
+            <br/>
+            <p>In the below sections you can find the research questions that rised during the our investigation and the methods and techniques used to gather the necessary information for the project. This questions 
+              helped us shape the base of not only our research, but also the design and development of the project, since encapsulating the needs, problems and solutions 
+              for this project into one sentence allowed us to be more productive and efficient in our work.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>Main Research Question</h3>
+            <p style="font-size: 1.4rem; font-weight: 600;">How can Logichainge design and develop an efficient and automated Groupage Transport Management System (TMS) module within their SaaS platform?</p>
+          </div>
+
+          <div class="section">
+            <h4>Subquestions</h4>
+            <ul>
+              <li>What are the key functionalities required for the Groupage TMS module?</li>
+              <li>How can the front-end flow of the groupage functionality be designed to ensure a seamless user experience?</li>
+              <li>How can customer feedback be collected and utilized to validate and fine-tune the designs of the Groupage TMS module?</li>
+              <li>How much information does this page handle on a daily basis?</li>
+              <li>How does the user imagine the ideal process of making a groupage order on a software application? Which part of the process is the most important for automation?</li>
+              <li>What relevant and personalized information/data could be implemented in this module?</li>
+            </ul>
+          </div>
+
+
+          <div class="section">
+            <h3>Research Methods</h3>
+            <p>Here we see the different research methods utilized in order to achieve a better understanding of the different elements comprised in this endevour and what we could do with and for the Groupage Transport
+              System, the logistics industry and Logichainge's SaaS platform. The methods used are:</p>
+            </p>
+            <ul>
+              <li>MoSCoW Analysis: Prioritizing project elements for efficiency.</li>
+              <div class="section" style="width: 100%;">
+                    <div class="toggle-container">
+                      <div class="toggle-arrow"><i class="fa-solid fa-angles-down"></i></div>
+                      <hr class="toggle-line">
+                      <a href="javascript:void(0)" class="show-pdf"></a>
+                    </div>
+
+                  <div id="pdf-container" class="pdf-container">
+                    <a href="Logichainge-Docs/persona-userstory.pdf" target="_blank">
+                        <div><img src="images/persona-userstory_Page_1.jpg" class="research-pdf-img" /></div>
+                        <p>MoSCoW - User Research</p>
+                    </a>
+
+                    <p>In this document we have identified the different features that are required for the Groupage TMS system. 
+                      We did this by utilizing both Persona and User Story to create a proper project plan. We categorized the features into two groups: Must Have & Should Have. 
+                      This categorization is based on the MoSCoW analysis technique, which is used to prioritize project elements for efficiency. 
+                      The Must Have features are essential for the system to function properly and are therefore the highest priority. 
+                      The Should Have features are important but not critical, while the Could Have features are desirable but not necessary. 
+                      The Won't Have features are not included in the project scope and will not be implemented.</p>
+                    </p>
+                  </div>
+                </div>
+              <li>Competitive Analysis: Identifying competitors and analyzing their strengths and weaknesses.</li>
+              <div class="section" style="width: 100%;">
+                    <div class="toggle-container">
+                      <div class="toggle-arrow"><i class="fa-solid fa-angles-down"></i></div>
+                      <hr class="toggle-line">
+                      <a href="javascript:void(0)" class="show-pdf"></a>
+                    </div>
+
+                  <div class="pdf-container">
+                    <a href="Logichainge-Docs/GROUPAGE SIMILAR APPS.pdf" target="_blank">
+                        <div><img src="images/GROUPAGE SIMILAR APPS_Page_1.jpg" class="research-pdf-img" /></div>
+                        <p>Competitors Research</p>
+                    </a>
+                    <p>This was done by analysing the competitors websites and applications, and then comparing them to each other.
+                      We did this in order to establish what the best and worst elements of the competitors were, and then to use this information to improve the design of the Groupage TMS system.
+                    </p>
+                  </div>
+                </div>
+              <li>Analytics Research: Identifying optimal user interactions and time-efficiency.</li>
+              <div class="section" style="width: 100%;">
+                    <div class="toggle-container">
+                      <div class="toggle-arrow"><i class="fa-solid fa-angles-down"></i></div>
+                      <hr class="toggle-line">
+                      <a href="javascript:void(0)" class="show-pdf"></a>
+                    </div>
+
+                  <div class="pdf-container">
+                    <a href="Logichainge-Docs/groupage-research-questions.pdf" target="_blank">
+                        <div><img src="images/groupage-research-questions_Page_1.jpg" class="research-pdf-img" /></div>
+                        <p>Groupage Research</p>
+                    </a>
+
+                    <p>This research was aimed at identifying optimal user interactions and time-efficiency. 
+                      We did this by conducting an interview to gather information about the user's experience with the Groupage TMS system. 
+                      The results of the interview were then analyzed to identify the optimal user interactions and time-efficiency.</p>
+                    </p>
+                  </div>
+                </div>
+              <li>Secondary Research: Understanding the industry, client, and problem-solving needs.</li>
+              <div class="section" style="width: 100%;">
+                    <div class="toggle-container">
+                      <div class="toggle-arrow"><i class="fa-solid fa-angles-down"></i></div>
+                      <hr class="toggle-line">
+                      <a href="javascript:void(0)" class="show-pdf"></a>
+                    </div>
+
+                  <div class="pdf-container">
+                    <a href="Logichainge-Docs/GROUPAGE TRANSPORT.pdf" target="_blank">
+                        <div><img src="images/GROUPAGE TRANSPORT_Page_1.jpg" class="research-pdf-img" /></div>
+                        <p>Groupage Research</p>
+                    </a>
+
+                    <p>With this research we aimed to get a better understanding of the industry at hand as well as the specifics of what involves
+                      a Groupage transport system process. Understanding the key points of what makes Groupage transport a viable option for many companies was a
+                      key element in the research process. Logistics industry is a vast array of terms, methodologies and processes that are constantly evolving and
+                      changing, hence, understanding its flaws and strenghts helped us determine the best route of action to start our project.
+                    </p>
+                  </div>
+                </div>
+              <li>Usability Testing: Identifying design flaws and usability issues.</li>
+              <div class="section" style="width: 100%;">
+                    <div class="toggle-container">
+                      <div class="toggle-arrow"><i class="fa-solid fa-angles-down"></i></div>
+                      <hr class="toggle-line">
+                      <a href="javascript:void(0)" class="show-pdf"></a>
+                    </div>
+
+                  <div id="pdf-container" class="pdf-container">
+                    <a href="Logichainge-Docs/ResearchTMS-T&T.pdf" target="_blank">
+                        <div><img src="images/ResearchTMS-T&T_Page_1.jpg" class="research-pdf-img" /></div>
+                        <p>TMS-T&T Research</p>
+                    </a>
+
+                    <p>With this document we wanted to showcase what were the key elements involving TMS systems, what makes it work, what 
+                      are their flaws and how can we improve from them.
+                    </p>
+                  </div>
+                </div>
+              <li>User Interviews: Understanding the client's needs and gathering insights.</li>
+              <div class="section" style="width: 100%;">
+                    <div class="toggle-container">
+                      <div class="toggle-arrow"><i class="fa-solid fa-angles-down"></i></div>
+                      <hr class="toggle-line">
+                      <a href="javascript:void(0)" class="show-pdf"></a>
+                    </div>
+
+                  <div id="pdf-container" class="pdf-container">
+                    <a href="Logichainge-Docs/online-interview.pdf" target="_blank">
+                        <div><img src="images/online-interview_Page_1.jpg" class="research-pdf-img" /></div>
+                        <p>User Research</p>
+                    </a>
+
+                    <p>With this interview we wanted to understand the client's needs, their necessities within this system. 
+                      We did this by asking questions about their experience with the Groupage TMS system, what works for them and what needs/can be improved. 
+                    </p>
+                  </div>
+                </div>
+            </ul>
+          </div>
+        </div>
+        
+        
+      </section>
+
+      <hr class="section-divider" />
+
+
+      <!-- Design Phase -->
+      <section id="project-design">
+        <div class="design-phase">
+          <img class="design-intro-img" src="images/deisgn-evolution.gif" alt="Design evolution">
+          <div class="design-card">
+            <div class="design-title">
+              <h2>Design Phase</h2>
+              <div class="learning-outcomes"></div>
+            </div>
+
+            <div class="section">
+              
+                 <h3>Introduction</h3>
+                 
+             
+              <p>
+                The design phase of the Groupage Transport Management System (TMS) module aimed to create a streamlined and automated 
+                solution for logistics professionals. This phase involved various key elements, including sketches, wireframe design, 
+                and an interactive prototype. Approaching the design phase after our research was completed was imperative in order to start working on 
+                the main ideas we had in mind. We wanted to create a system that was easy to use, that was intuitive and that could be used by anyone,
+                we were aware of our target audience and realised the short-comings of trying to integrate a new techonology into such a manually labored 
+                process within the logistics industry.
+              </p>
+              <br/>
+              <p>Creating a user-friendly, easy to use and built for skilled professionals was the goal of our design, which meant integrating both a professional look 
+               and conservative design with a modern and intuitive interface. By automating the administrative process of the Groupage TMS system, we are aiming 
+               to increase productivity for our users as well as standarize a more cohesive management of the Groupage Transport System. 
+              </p>
+              
+            </div>
+
+            <div class="section">
+        <h3>Sketches</h3>
+        <p>
+          Sketches were created as a foundation for the design phase. They served as initial representations of the module's
+          layout and functionality. Take a look at the sketches below to get an idea of the early design concepts:
+        </p>
+        <div class="image-gallery" id="sketches-gallery"></div>
+      </div>
+
+      <div class="section">
+        <h3>Wireframes</h3>
+        <p>
+          Detailed wireframes were created using <a href="https://www.figma.com/file/7PxChlnNKudq9ZiaobhNh0/Logichainge?type=design&node-id=1625%3A11348&t=67inQ6Sl1knCeJVp-1" target="_blank">Figma</a>  to showcase the main features and functionalities of the Groupage TMS
+          module. These wireframes underwent iterative improvements based on feedback from stakeholders. Take a look at the
+          wireframes below:
+        </p>
+        <div class="image-gallery" id="wireframes-gallery"></div>
+      </div>
+
+      <div class="section">
+        <div class="intro-prototypelink">
+          <h3>Interactive Prototype</h3>
+          <a href="https://www.figma.com/proto/7PxChlnNKudq9ZiaobhNh0/Logichainge?type=design&node-id=1625-11445&scaling=min-zoom&page-id=1625%3A11348&starting-point-node-id=1625%3A11445" target="_blank" alt="Prototype Link" class="prototype-link">Try it!</a>
+        </div>
+        
+        <p>
+          An interactive prototype was developed to showcase the design and user flow within the module. The prototype
+          underwent rigorous evaluation and refinement based on stakeholder feedback. Explore the evolution of the prototype
+          below:
+        </p>
+        <div class="image-gallery" id="prototype-gallery"></div>
+
+        <h3 style="margin-top: 50px;">User Flow & Feedback</h3>
+        <p>As the prototype was growing, so did the user flow for it. As stated before, our idea was to creat a and easy to use module that allowed our users
+          to easily complete their tasks with minimal effort. Making it intuitive meant that the user flow needed to be cohesive and have a clear learning curve. 
+          We needed the user to feel that the system was built solely for them, that A to B was the path they were following, even if that meant going through C and D.
+          The user is in control and that is how they should feel while using our system.
+        </p>
+        <br/>
+        <br/>
+        <p>Feedback was received after user testing with stakeholders within Logichainge. The prototype underwent numeruous changes due to this and industry research.
+          Many of the changes integrated in the final prototype were implemented into the PoC in development.
+        </p>
+        <div class="design-userflow">
+          <div class="image-gallery" id="flow-gallery"></div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <hr class="section-divider" />
+
+  <section id="project-development">
+  <div class="project-development">
+    <div class="development-card">
+      <div class="development-title">
+        <h2>Development Phase</h2>
+        <div class="learning-outcomes"></div>
+      </div>
+
+      <div class="section" id="development-introduction">
+        <h3>Introduction</h3>
+        <div class="technologies">
+          <i class="tech-icon devicon-vuejs-plain" data-icon="Vue.js"><p>Vuejs</p> </i>
+          <i class="tech-icon devicon-python-plain" data-icon="Python"><p>Python</p> </i>
+          <i class="tech-icon devicon-django-plain" data-icon="Django"><p>Django</p></i>
+          <i class="tech-icon devicon-vuetify-line" data-icon="Vuetify"><p>Vuetify</p></i>
+        </div>
+        <p>
+          The development phase focuses on implementing and building the project using various technologies,
+          including Vue.js, Vuetify, Python and Django. This section outlines the different sprints and tasks completed
+          during the development phase.
+        </p>
+        <p>Throughout the project, the team utilized technologies such as Vue.js/Vuetify for the front-end, Python for the back-end, and initially FastAPI for the API portals, later transitioning to Django. 
+          Collaboration with a back-end developer was essential for the successful integration of front-end and back-end components, as such, we decided to 
+          Follow an Agile UX approach, embracing iterative and collaborative methods to work both efficiently and steadily. </p>
+      </div>
+
+      <div class="section" style="width: 100%;">
+        <h3>Agile Board</h3>
+        <div class="trello-board">
+          <!-- Embedded Trello Table -->
+          <iframe src="https://trello.com/b/c0ySqbso.html" frameborder="1" width="100%" height="500"></iframe>
+        </div>
+      </div>
+
+      <div class="sprint-container">
+        <div class="development-sprints-title">
+          <h3>Sprints</h3>
+          <p>For this phase of the project we divided the workflow into different Sprints and worked on them using the Agile UX method which alloed
+         us to collaborate closelywith my colleague from the backend. Here we can see some of the tasks we worked on each Sprint and an image showcasing the progress.
+        </p>
+        </div>
+        
+        
+
+        <div class="sprint-card">
+          <!-- Add a modal container -->
+        <div id="modal-container"></div>
+          <div class="sprint-header">
+            <h4>Sprint 1</h4>
+          </div>
+          <div class="sprint-content">
+            <ul>
+              <li>Set up the Vue project base.</li> 
+              <li>Create a hard-coded version of the base project.</li> 
+              <li>Implement elements from the main Vue/Vuetify project.</li> 
+              <li>Debug the project.</li> 
+            </ul>
+            <div class="zoomable-image">
+              <img src="images/PoC-v1.0.png" alt="Sprint 1 Image" data-zoomable="true" data-modal="modal-1">
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above sprint-card structure for each sprint -->
+
+        <!-- Sprint 2 -->
+        <div class="sprint-card">
+          <!-- Add a modal container -->
+        <div id="modal-container"></div>
+          <div class="sprint-header">
+            <h4>Sprint 2</h4>
+          </div>
+          <div class="sprint-content">
+            <ul>
+              <li>Create the sidebar.</li> 
+              <li>Create a simple table in the main view.</li> 
+              <li>Create the groupage view.</li> 
+              <li>Add a button to the main page table to link to the groupage view.</li> 
+              <li>Add hardcoded mock data to the linehauls in the groupage view.</li> 
+            </ul>
+            <div class="zoomable-image">
+              <img src="images/logichainge-groupage-main.png" alt="Sprint 2 Image" data-zoomable="true" data-modal="modal-2">
+            </div>
+          </div>
+        </div>
+
+         <!-- Sprint 3 -->
+        <div class="sprint-card">
+          <!-- Add a modal container -->
+        <div id="modal-container"></div>
+          <div class="sprint-header">
+            <h4>Sprint 3</h4>
+          </div>
+          <div class="sprint-content">
+            <ul>
+              <li>Add a donut chart to each linehaul.</li> 
+              <li>Link the donut chart to the mock data.</li> 
+              <li>Debug the donut chart.</li> 
+              <li>Make design and style changes to the groupage view.</li> 
+            </ul>
+            <div class="zoomable-image">
+              <img src="images/logichainge-groupage-main2.png" alt="Sprint 2 Image" data-zoomable="true" data-modal="modal-3">
+            </div>
+          </div>
+        </div>
+
+         <!-- Sprint 4 -->
+        <div class="sprint-card">
+          <!-- Add a modal container -->
+        <div id="modal-container"></div>
+          <div class="sprint-header">
+            <h4>Sprint 4</h4>
+          </div>
+          <div class="sprint-content">
+            <ul>
+              <li>Transfer relevant code from the old project to the new project.</li>
+              <li>Debug any issues that arise during the transfer.</li>
+              <li>Add ID number for linehauls into db and show in front end.</li>
+              <li>Confirmation page design improvements</li>
+            </ul>
+            <div class="zoomable-image">
+              <img src="images/logichainge-groupage-confirmation.png" alt="Sprint 2 Image" data-zoomable="true" data-modal="modal-4">
+            </div>
+          </div>
+        </div>
+
+         <!-- Sprint 5 -->
+        <div class="sprint-card">
+          <!-- Add a modal container -->
+        <div id="modal-container"></div>
+          <div class="sprint-header">
+            <h4>Sprint 5</h4>
+          </div>
+          <div class="sprint-content">
+            <ul>
+              <li>Linehauls View.</li>
+              <li>Add Linehaul Button. </li>
+              <li>Exceptions handling. </li>
+              <li>Edit linehaul functionality.</li>
+            </ul>
+            <div class="zoomable-image">
+              <img src="images/logichainge-groupage-linehauls.png" alt="Sprint 2 Image" data-zoomable="true" data-modal="modal-5">
+            </div>
+          </div>
+        </div>
+
+         <!-- Sprint 6 -->
+        <div class="sprint-card">
+          <!-- Add a modal container -->
+        <div id="modal-container"></div>
+          <div class="sprint-header">
+            <h4>Sprint 6</h4>
+          </div>
+          <div class="sprint-content">
+            <ul>
+              <li>
+                Refractor Edit Linehauls page. 
+              </li>
+              <li>Automatically filter linehauls by country.</li>
+              <li>Improve overall designs.</li>
+              <li>Change order status in dashboard.</li>
+            </ul>
+            <div class="zoomable-image">
+              <img src="images/logichainge-groupage-addnewlinehauls.png" alt="Sprint 2 Image" data-zoomable="true" data-modal="modal-6">
+            </div>
+          </div>
+        </div>
+        <!-- End of Sprint 2 -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <hr class="section-divider" />
+
+<!-- Results and Impact Section -->
+
+<section id="project-results">
+  <div class="results-impact">
+    <div class="results">
+      
+      <div class="results-title"><h2>Results and Impact</h2><div class="learning-outcomes"></div></div>
+      <div class="results-intro">
+        <p>
+          Logichainge's Groupage TMS module has the potential to bring significant advancements to the logistics service provider industry, 
+          revolutionize the groupage transport system, and have a positive impact on the company's future to grow in the Logistics Industry. 
+          Let's explore the impact in more detail:
+        </p>
+      </div>
+      <div class="impact-container">
+        <div class="impact-box">
+          <h3>Impact on the Logistics Service Provider Industry</h3>
+          <p>
+            The development of Logichainge's Groupage TMS module has the potential to bring significant advancements to the logistics service provider 
+            industry. By reducing substancially manual labor in the order process, the module aims to enable logistics companies to enhance their operational efficiency 
+            and reduce costs. This automation empowers planners to add more value to their customers by focusing on critical tasks rather than administrative burdens. 
+            As a result, logistics service providers can improve their service quality, increase customer satisfaction, and gain a competitive edge in the industry.
+          </p>
+        </div>
+        <div class="impact-box">
+          <h3>Impact on the Groupage Transport System</h3>
+          <p>
+            The Groupage TMS module has the potential to revolutionize the groupage transport system by introducing automation and streamlining processes. Currently, 
+            simple tasks that take cost-efficient time are manual processes, leading to inefficiencies and potential errors. Logichainge's module aims 
+            to automate these tasks, resulting in improved accuracy, reduced turnaround time, and enhanced overall operational efficiency.
+          </p>
+        </div>
+        <div class="impact-box">
+          <h3>Impact on Logichainge as a Company</h3>
+          <p>
+            The successful development and implementation of the Groupage TMS module can have several positive impacts on Logichainge as a company. Firstly, it allows Logichainge 
+            to position itself as an innovative and technology-driven logistics service provider. By introducing automation and leveraging AI models, Logichainge demonstrates its 
+              commitment to providing cutting-edge solutions to its clients. This enhances the company's reputation and opens doors to new business opportunities and partnerships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <hr class="section-divider" />
+
+      <!-- Conclusion -->
+      <section id="project-conclusion">
+        <div class="project-conclusion">
+          <div class="conclusion">
+            <div class="conclusion-title"><h2>Conclusion</h2><div class="learning-outcomes"></div>
+          </div>
+          <div class="conclusion-intro"><p>
+            Here I present the final thoughts on the project, lessons learned, and personal growth as
+            a front-end developer/UX designer. Working on this project has been an insightful and increasing learning experience for me.
+            </p>
+            <br/>
+            <p>The Groupage TMS system project undertaken by Logichainge aims to address the lack of IT support for tasks related to shipment assignment and management within the Groupage transport system. 
+              The goal is to consolidate the various processes and approaches to Groupage management into one generic process, ultimately automating and streamlining the management of the system. This 
+              analysis will provide a comprehensive review of the project, highlighting its strengths and weaknesses based on the provided information.. </p>
+            <br/>
+            <p>Each phase of this project presented me an opportunity to grow, to evolve past my student mentality and my own mental burdens to achieve a level of understanding and professional growth 
+              that helped me deliver a product that I am proud of.  
+            </p>
+          </div>
+          <div class="conclusion-container">
+            <div class="conclusion-project-reflection">
+              <h3>Project Reflection</h3>
+            <p>Firstly, the project demonstrates a clear understanding of the problem faced by Logichainge's clients. By identifying the need for automation and standardization in Groupage transport management, 
+              the project targets logistics professionals, such as consolidators and forwarders, who seek an intuitive and efficient solution. This user-centric approach shows a strong understanding of the target 
+              audience's needs and aligns with the overarching goal of reducing manual labor and administrative burdens.</p>
+
+            <p>In terms of research methods, the project utilized various techniques. The "MoSCoW" analysis allowed for prioritizing the essential elements of the project effectively. Analytics research and 
+              secondary research were conducted to ensure a satisfactory user interaction and to understand the industry and client needs. Usability testing and user interviews were employed to gather feedback, 
+              identify design flaws, and validate the effectiveness of the solution. These research methods demonstrate a comprehensive and systematic approach to problem-solving, ensuring that the end product meets 
+              the requirements and expectations of the users..</p>
+
+            <p>The development process employed for the Groupage TMS system project follows an Agile UX methodology, which is suitable for collaborative work with the back-end developer. This iterative approach 
+              promotes continuous improvement and adaptation to changing requirements throughout the development lifecycle. The use of Vue.js for the front-end, Python for the back-end, and Django for the API portals 
+              indicates a thoughtful selection of technologies that align with industry standards and allow for scalability and maintainability.</p>
+            <p>The project timeline outlines clear stages, including research, empathizing and defining the problem, prototyping, development, testing, completion, and report/evaluation. This structured timeline 
+              ensures a well-organized workflow and provides a roadmap for project progression. Each phase corresponds to a specific set of activities, enabling effective management of resources and deliverables. </p>
+
+              <div class="conclusion-strenghts">
+              <h4>Strengths of the Project</h4>
+            <ul>
+              <li>Thorough Research: The project employed various research methods, including MoSCoW analysis, analytics research, secondary research, and user interviews. This comprehensive approach helped to 
+                gather insights and understand the industry, client needs, and problem-solving requirements.</li>
+              <li>Collaborative Development Process: The utilization of Agile UX methodology and close collaboration between the front-end developer and the back-end developer facilitated efficient communication, 
+                adaptability, and iterative development. This approach ensured that the project remained flexible and responsive to changes throughout the development cycle.</li>
+              <li>Clear Design Process: The project involved designing the front-end flow, wireframes, and final designs in Figma. By validating and fine-tuning designs based on customer feedback, the project team 
+                ensured a user-centric approach to interface design and usability.</li>
+              <li>Technology Stack: The choice of Vue.js for the front-end, Python for the back-end, and Django for API portals provided a robust and scalable foundation for the development of the Groupage TMS module.</li>
+            </ul>
+            </div>
+
+            <div class="conclusion-challenges">
+              <h4>Challenges of the Project</h4>
+            <ul>
+              <li>Project Scope Confusion: The project encountered challenges at the beginning due to confusion regarding the project scope. This confusion could have led to delays and difficulties in delivering the 
+                expected functionalities within the given timeline.</li>
+              <li>Client Changes: The change of the initial client added complexity to the project and may have required additional adjustments to align with the new client's specific requirements. This change could have 
+                caused disruptions and affected project continuity.</li>
+              <li>Extensive Research Requirements: The industry's complexity and the need to understand the Groupage transport system necessitated extensive research. The abundance of components and terms to be studied may 
+                have posed challenges in achieving a deep understanding of the system within the project timeline.</li>
+              <li>Limited Access to Similar Platforms: The project team faced limitations in researching similar tools and platforms due to paywalls. This restriction may have hindered the collection of valuable information 
+                and best practices from existing solutions in the market.</li>
+              <li>Lack of Testing Users: The project faced limitations in testing the prototype with users outside of the Logichainge team. This limitation could have impacted the ability to gather diverse feedback and 
+                ensure the product's usability for the intended target users.</li>
+              <li>Lack of Extensive UX Design Base: The Logichainge platform's existing UX design lacked comprehensive development, which may have posed challenges in integrating the Groupage TMS module seamlessly and 
+                consistently with the rest of the platform.</li>
+              <li>Code Complexity: The complexity of the base code for the SaaS platform affected the development process. Improved communication from my part could have helped address this challenge, ensuring a clearer understanding of 
+                the code structure and facilitating smoother development.</li>
+              <li>Imposter Syndrome: I experienced moments of self-doubt and imposter syndrome due to poor mental health. However, with the help of teammates and colleagues, these challenges were overcome 
+                and did not significantly impact the project's progress.</li>
+            </ul>
+            </div>
+            </div>
+            
+
+            
+            
+            <div class="conclusion-personal">
+            <h3>Personal Goals-Reflection</h3>
+            <br/>
+            <p>As a front-end developer and UX designer, I have learned extensively from this project. Firstly, I have gained a better understanding of the logistics industry and the challenges faced by logistics service 
+              providers. This knowledge will help me in future projects related to the logistics industry and other industries. Secondly, I have learned how to work with a back-end developer and how to communicate effectively to ensure 
+              that the front-end and back-end are aligned. Thirdly, I have improved my skills using first Figma and then Vue.js to develop a web application. This knowledge will be useful in future projects that require the use of 
+              these technologies.</p>
+
+              <br/>
+              <p>At the start of the project, I set several personal goals, and a majority of them were achieved successfully. The goals to improve JavaScript skills, work further on Vue.js, and enhance Figma skills were met, contributing 
+                to my professional growth and aligning with the project's requirements.</p>
+              <br/>
+              <p>However, the goal to understand and motivate myself better in the workflow of a project was not fully achieved. Despite seeking project management positions as a personal long-term goal, I still struggled with self-motivation and 
+                complacency during the semester. This presents an opportunity for further personal development and self-reflection to enhance motivation and work ethics.</p>
+              <br/>
+              <p>Additionally, the project provided an opportunity to improve time management skills, implement a routine, and develop effective professional iterations. These goals were successfully accomplished, leading to improved productivity 
+                and the ability to manage tasks more efficiently.</p>
+            </div>
+
+            <div class="conclusion-final">
+            <h3>Final Thoughts</h3>
+            <p>This project aimed to address the challenges faced by logistics service providers using the Groupage transport system. Through thorough research, a collaborative development process, 
+              and a clear design process, the project demonstrated several strengths. However,several challenges were encountered, which did not hinder the overall development of the product, what is more, in spite of this challenges is 
+              that the project flourished and allowed us to grow with it.</p>
+            <br/>
+            <p>The insights gained from this project extend beyond technical skills, encompassing the importance of effective communication, adaptability, and collaboration in achieving project success. Furthermore, personal reflection 
+              on areas such as motivation and work ethics provides a valuable opportunity for continued self-improvement and growth.</p>
+            <br/>
+            <p>Overall, the Groupage TMS system project served as a valuable learning experience, highlighting the intricacies of software development within the logistics industry. The project's outcomes and personal achievements lay a foundation 
+              for future endeavors, ensuring continued professional development and a greater understanding of project management principles.</p>
+            </div>
+            
+
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-c1">
+          <div class="footer-logo">
+            <img src="images/logo-design.png" alt="Logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="projects.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="foot">
+          <!--DAYS OF THE WEEK-->
+          <div id="days-of-week" class="footer-days">
+            <!-- Days of the week will be inserted dynamically -->
+          </div>
+
+          <div class="fl">
+            <div class="spacer"></div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/the_gamerlands/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/matias-flores-93673394/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="copyMatt">&copy; Matias Flores <span id="year"></span></span>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    
+    <script src="https://kit.fontawesome.com/dd1d486564.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

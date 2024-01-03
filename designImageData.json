@@ -1,0 +1,122 @@
+{
+  "flow":[
+    {
+      "mainImage": {
+        "src": "../images/interactive-prototype-Figma.png",
+        "alt": "Design flow prototype"
+      },
+      "shortText": "Design flow for the protoype ",
+      "longText": "Making complex navigation seem simple and easy to learn is one of our main goals for this project. The user flow can be convoluted, but that does not mean the user should feel like it is.",
+      "subImages":[
+        {
+          "src": "../images/prototype-feedback1.png",
+          "alt": "Stakeholders Feedback: image change",
+          "shortText": "Stakeholders Feedback: image change",
+          "longText": "In some cases, feedback received helped us understand what could not work in the long term for Logichainge's platform. In this case, something as seemingly simple as including a logo image could be actually detrimental in the future performance of the module, since it would mean heavier workload into the backend. Thus this idea was erased from the final PoC."
+        },
+        {
+          "src": "../images/prototype-feedback2.png",
+          "alt": "Stakeholders Feedback: graph design",
+          "shortText": "Stakeholders Feedback: graph design",
+          "longText": "Sometimes feedback was positive towards our design choices, paving the way for an easier design process. In this case, the stakeholders were happy with the design of the graph, which was a key element in the module, later added to the final PoC."
+        },
+        {
+          "src": "../images/prototype-feedback3.png",
+          "alt": "Stakeholders Feedback: pagination",
+          "shortText": "Stakeholders Feedback: pagination",
+          "longText": "Some of the feedback received helped us with the design choices that affected both the front-end and the back-end of this project. It was pointed to us that simplifying the pagination would be beneficial in the long-term for the project, since it is apparent that scalability of pagination in databases is not the best."
+        }
+      ]
+    }
+  ],
+  "sketches": [
+    {
+      "mainImage": {
+        "src": "../images/sketch-3.png",
+        "alt": "Sketch 1"
+      },
+      "shortText": "First concept: Groupage module selection",
+      "longText": "This would be the way to allow the user to firstly select the option to locate their shipment/order into a Groupage transport system.",
+      "subImages": [
+        {
+          "src": "../images/sketch-4.png",
+          "alt": "Sketch 2",
+          "shortText": "First concept: main page",
+          "longText": "In this sketch I wanted to get an initial look at what the main page for our Groupage module would look like. Right from the start I knew I wanted to work with cards as a way to show our linehauls."
+        },
+        {
+          "src": "../images/sketch-1.jpg",
+          "alt": "Sketch 3",
+          "shortText": "First concept: edit linehauls",
+          "longText": "In this sketch we appreciate the way the user would be able to edit the linehauls. We wanted to make it as simple to the user as possible."
+        },
+        {
+          "src": "../images/sketch-5.png",
+          "alt": "Sketch 3",
+          "shortText": "First concept: confirmation page",
+          "longText": "Making a confirmation page was one of the first ideas discussed in the team. We understood the need for the user to be able to see all the relevant information for their order once it is set."
+        }
+      ]
+    }
+  ],
+  "wireframes": [
+    {
+      "mainImage": {
+        "src": "../images/Wireframe-Groupage-Main-1.jpg",
+        "alt": "Wireframe 1"
+      },
+      "shortText": "Wireframes: Main Page",
+      "longText": "In this Frame we can see the main page for our Groupage module. We wanted to allow the user to simply be able to alocate their shipment/order into a Groupage transport system with a few clicks. The idea for editing the linehauls was yet to be added.",
+      "subImages": [
+        {
+          "src": "../images/Wireframe-Groupage-Edit-LineHaulPage.jpg",
+          "alt": "Wireframe 2",
+          "shortText": "Wireframes: Edit Linehauls Page",
+          "longText": "Here we can see an initial iteration of what the page to edit the linehauls would look like. In this one we see that the editable fields are visible off the bat, this would be changed in later iterations."
+        },
+        {
+          "src": "../images/Wireframe-Groupage-AddNew-LineHaul.jpg",
+          "alt": "Wireframe 3",
+          "shortText": "Wireframes: Adding a new linehaul",
+          "longText": "Another idea we wanted to implement in this project was the ability to add a new linehaul. This would be done by a simple click where the user would see a new set of fields to implement the relevant data on their linehaul."
+        },
+        {
+          "src": "../images/Wireframe-Groupage-OrderConfirmationPage.jpg",
+          "alt": "Wireframe 4",
+          "shortText": "Wireframes: Order Confirmation Page",
+          "longText": "For this page we wanted to keep a simple look while still providing the user with all the relevant information for their order. In this concept wireframe we went back and forth between using a modal or a complete page."
+        }
+      ]
+    }
+  ],
+  "prototype": [
+    {
+      "mainImage": {
+        "src": "../images/prototype-main-evolution.gif",
+        "alt": "Prototype Evolution 1"
+      },
+      "shortText": "Prototype: Main Page",
+      "longText": "The concept showcased here is the one that was finally implemented in the prototype after several changes made due to stakeholders feedback. <br/> <br/> We run several iterations of this page before we landed one we were satisfied with, one of the main changes established in the different versions was way the user would add their shipment/order to a linehaul. Elements such as Linehaul information, loading capacity bar, add to linehaul button were added consequently to the feedback we received.",
+      "subImages": [
+        {
+          "src": "../images/Groupage-LineHaul-Trucks.jpg",
+          "alt": "Prototype Evolution 2",
+          "shortText": "Prototype: Individual Linehaul Truck",
+          "longText": "This is a concept that was later discarded, when adding a new linehaul and once all the relevant data is set by the user, they could be able to check the individual trucks info and even edit some fields. We discarded this idea after stakeholders feedback."
+        },
+        {
+          "src": "../images/Groupage-AddNew-LineHaul2.jpg",
+          "alt": "Prototype Evolution 3",
+          "shortText": "Prototype: Add New Linehaul",
+          "longText": "Here we see an example of what adding a new linehaul would look like to the user. The idea here was to allow the user to fill the relevant data themselves and then add as many number of shipments as they needed for that specific linehaul per day. <br/> <br/> Once any number of shipments is introduced, the user can fill in the data for each one of them and tehn save their changes."
+        },
+        {
+          "src": "../images/Groupage-OrderConfirmationPage.jpg",
+          "alt": "Prototype Evolution 4",
+          "shortText": "Prototype: Confirmation Page",
+          "longText": "This page was one of the latest to be added, since its purpose was straight forward. What was important in this page is the kind of information that would be shown to the user. This was checked with our stakeholders in order to assure the best outcome possible."
+        }
+      ]
+    }
+  ]
+}

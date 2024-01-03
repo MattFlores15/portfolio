@@ -1,0 +1,1019 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+body {
+  background-color: transparent !important;
+  height: 100% !important;
+  font-family: Open Sans;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.45;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+  /*NavBar + Logo*/
+
+.navbar {
+    display: flex;
+    margin-top: 0% !important;
+    background-color: #0A0C0E;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: #008b8b 2px solid;
+    color: #EEEEEE !important;
+    text-decoration: none !important;
+    padding: 0 !important;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: ease .4s;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navbar-brand {
+    margin-left: 100px;
+  }
+
+  .m_nav {
+    display: none;
+  }
+
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+
+  .hello-container{
+    display: flex;
+    gap: 15px;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .title_t {
+    text-align: center;
+    /* font-weight: 700; */
+    position: relative;
+    /* color: darkcyan; */
+    cursor: default;
+    padding: 30px;
+    /* text-shadow: 1px 1px 2px darkslategrey; */
+  }
+
+  .kenobi {
+    display: none;
+    width: 120px;
+    height: auto;
+    position: relative;
+    transition: ease .8s;
+    border-radius: 10px;
+  }
+
+  .title_t:hover + img {
+    transition:all ease .4s;
+    display: block;
+  }
+
+  .nav a {
+    color: #EEEEEE;
+    font-weight: 700;
+    text-decoration: none !important;
+  }
+  .nav-link {
+    position: relative;
+    padding: 25px;
+  }
+
+  .nav {
+    
+    width: fit-content;
+    display: flex;
+    height: fit-content;
+    text-align: center;
+    position: sticky;
+    max-width: fit-content;
+  }
+  .nav :hover {
+    color: #0A0C0E;
+    background-color: #4facac;
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+  .section-divider{
+    display: none;
+  }
+
+  /*////////////////////Home Page//////////////////////*/
+
+  /* Slider */
+  .container {
+    z-index: -1;
+    padding: 0 0 0 0;
+    min-height: 100%;
+    height: 100%;
+    object-fit:cover !important;
+    object-position: right;
+    width: 100%;
+    max-width: 100%;
+    background-color:#222831;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/IMG_20210508_131234_910_magic.png);
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position:  top-left;
+    background-repeat: no-repeat;
+    background-size:auto;
+    overflow: hidden;
+    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+        @media only screen and (min-device-width: 1900px) {
+          background-position: top-left;
+        }
+
+  }
+
+  .intro-container {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+  /*Changing words*/
+
+  .text_move {
+    position: absolute;
+    font-weight: 600;
+    width: fit-content;
+    height: 40px;
+    font-size: 4rem;
+    align-self: center;
+    margin-right: 80px;
+  }
+
+  #hereto {
+    font-family: "Nunito Sans", sans-serif;
+    color: #008b8b;
+    text-shadow: 1px 1px 2px #EEEEEE;
+    font-size: 6rem;
+  }
+
+  .slider p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .word {
+    position: absolute;
+    width: 360px;
+    font-family: "Nunito Sans", sans-serif;
+    opacity: 0;
+  }
+
+  .letter {
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.52s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.58s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .wisteria {
+    color: rgb(69, 50, 188)
+  }
+
+  .belize {
+    color:darkmagenta;
+  }
+
+  .pomegranate {
+    color:darkgoldenrod;
+  }
+
+  .green {
+    color:#EEEEEE;
+  }
+
+  .midnight {
+    color: #751375;
+  }
+
+  /* Contents */
+  .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  .content-txt {
+    width: 400px;
+    height: 150px;
+    float: left;
+    position: relative;
+    top: 300px;
+    -webkit-animation: content-s 9.5s infinite;
+    -moz-animation: content-s 9.5s infinite;
+    animation: content-s 9.5s infinite;
+  }
+  .content-txt h1 {
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #EEEEEE;
+    text-align: left;
+    margin-left: 30px;
+    padding-bottom: 10px;
+  }
+  .content-txt h2 {
+    font-family: arial;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: italic;
+    color: #EEEEEE;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  /*//////////////////////////////////////////////////////////////*/
+
+  /*INTRO BOX*/
+
+  .h-intro {
+    padding: 50px;
+    display: flex;
+
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/pexels-lukas-1420709.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    align-items: center;
+  }
+
+  .h-container {
+    width: fit-content;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+.i-logo {
+  position: relative;
+}
+
+  #logo-i {
+    position: relative;
+    width: 120px;
+    height: auto;
+  }
+
+  #icon-mobile{
+    display: none;
+  }
+
+    /*//SKILLS CONTAINER//*/
+
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      height: fit-content;
+      align-items: center;
+    }
+
+    .skills-contenedor {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      height: fit-content;
+      align-items: baseline;
+    }
+
+    .skills-title {
+      font-size: 3rem;
+      font-weight: 600;
+      position: relative;
+      color: #008b8b;
+      text-shadow: 1px 1px 2px #EEEEEE;
+    }
+
+    .skills-contenedor .category {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.5s, transform 0.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      grid-area: 50px;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: baseline;
+      gap: 20px;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .skill {
+      text-align: left;
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+    }
+
+    .skill .fab,
+    .fas, .fa-node-js, .fa-brands{
+      color: #0A0C0E;
+      font-size: 2.5rem;
+    }
+
+    .tailwind-css{
+     width: 45px;
+     height: 50px;
+     align-self:center;
+    }
+
+    .skill .icon {
+      width: 25px;
+      justify-content: center;
+      display: flex;
+    }
+
+    .fa-laptop-code {
+      font-size: 1.6rem;
+    }
+
+    .skills-container
+    p {
+      margin: 0;
+      color: #EEEEEE;
+      font-size: 2rem;
+    }
+
+    .skills-container h2 {
+      font-size: 3rem;
+    }
+
+    #starting h2,
+    #learning h2,
+    #advanced h2 {
+      color: #008b8b;
+      text-shadow: 1px 1px 2px #0A0C0E;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+.container-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+    z-index: -1;
+      padding: 0 0 0 0;
+      object-fit: cover !important;
+      object-position: right;
+      width: 100%;
+      max-width: 100%;
+      background-color: #0A0C0E;
+    
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: auto;
+      overflow: hidden;
+    
+      /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+      @media only screen and (max-device-width: 1366px) {
+        .parallax {
+          background-attachment: scroll;
+        }
+      }
+}
+
+/* Slider Container Styles */
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.vid_cont {
+  display: none;
+  flex: 0 0 100%;
+}
+
+/* Container Styles */
+.int-c {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 50px;
+}
+
+.home-case{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: fit-content;
+  align-items: center;
+}
+
+#icon-dark {
+  width: 120px;
+  height: auto;
+}
+
+#int-t {
+  font-weight: 700;
+  cursor: default;
+  font-family: "Nunito Sans", sans-serif;
+  color: #eeeeee;
+  text-align: center;
+  text-shadow: 1px 1px 2px #008b8b;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+/* Web Content Styles */
+.web-content {
+  display: flex;
+  width: 50vw;
+  justify-content: start;
+  /* flex-direction: column-reverse; */
+  align-items: center;
+  padding: 20px;
+}
+
+/* Video Container Styles */
+.vid_cont {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  border: #008b8b 4px solid;
+  border-radius: 10px;
+  transition: transform 1s, opacity 1s;
+  overflow: hidden;
+  /* Add a smooth transition effect */
+
+  /* Add 3D effect */
+  background-color: #000;
+  /* Black background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7), 0 6px 20px rgba(0, 0, 0, 0.19);
+  /* Adjust the values based on your preference */
+}
+
+#cs{
+  height: 100% !important;
+  padding: 50px;
+}
+
+/* Adjust the height of the containers inside each anchor tag */
+.vid_cont .web-content {
+  height: 100%;
+  /* Adjust as needed */
+}
+
+#markr-container,
+#logi-container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+#markr-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/MK.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logi-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/LG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#joint-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/JE.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Text Container Styles */
+.txt {
+  position: relative;
+  width: 40vw;
+  height: auto;
+  gap: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+/* Description Icons Styles */
+.des-icons {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.des-icons .fab,
+.devicon-kotlin-plain,
+.devicon-swift-plain {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.devicon-kotlin-plain,
+.devicon-swift-plain {
+  font-size: 1.5rem;
+  align-self: baseline;
+}
+
+/* Text Styles */
+#text2,
+#text3,
+#text4,
+#text8,
+#text9,
+#text5,
+#text6,
+#text7 {
+  text-align: center;
+  color: #eeeeee;
+  position: relative;
+  width: 55%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  padding: 10px;
+}
+
+/* Video Styles */
+.vid video,
+#JE-gif {
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: #eeeeee 2px solid;
+}
+
+/* Empty Container Styles */
+.empty {
+  clear: both;
+  width: 600px;
+}
+
+/* Image Week Styles */
+.img-week h3 {
+  text-align: center;
+  color: darkcyan;
+  font-size: 2.8rem !important;
+  margin: auto !important;
+  font-weight: 600 !important;
+  cursor: default;
+  text-shadow: 1px 1px 2px cornsilk;
+  width: 90%;
+  position: relative;
+  height: fit-content;
+}
+
+
+
+.page-wrap h3 {
+  text-align: center;
+  cursor: default;
+  color: darkcyan;
+  font-size: 2.8rem !important;
+  margin: 0 !important;
+  font-weight: 600 !important;
+  text-shadow: 1px 1px 2px cornsilk;
+  width: fit-content;
+}
+
+.page-wrap a {
+  text-decoration: none;
+}
+
+  .h-text {
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    border: #EEEEEE 2px solid;
+    background-color: #008b8b;
+    color: #0A0C0E;
+    position: relative;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+ 
+
+  /*//////////Cards///////////*/
+
+  .c-cards {
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* The image used */
+    background-color: #222831;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/pexels-rostislav-uzunov-5011647.png");
+
+    /* Full height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    padding-right: 10%;
+    padding-left: 10%;
+
+    --bg-overlay-color: rgb(var(--color_22));
+    --bg-gradient: none;
+    --fill-layer-image-opacity: 0.3;
+  }
+  .card {
+    height: 350px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+    background: #EEEEEE;
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(122, 122, 122, 0.2);
+  }
+  .card:hover {
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(122, 122, 122, 0.2);
+  }
+  .card .img {
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card .img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card .top-text {
+    padding: 5px;
+    cursor: default;
+  }
+  .card .top-text .name {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0A0C0E;
+    margin-left: 15px;
+  }
+  .card .top-text p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #008b8b;
+    cursor: default;
+    letter-spacing: 0.2rem;
+    line-height: 20px;
+    margin-left: 15px;
+  }
+  .card .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #EEEEEE;
+    opacity: 0;
+    border-radius: 20px;
+    visibility: hidden;
+    cursor: default;
+    font-size: 1.15rem;
+    transition: 0.1s;
+  }
+  .card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 20px;
+  }
+  .card .bottom-text .text {
+    text-align: justify;
+  }
+  .card .bottom-text .btn {
+    margin: 10px 0;
+    text-align: left;
+    width: fit-content;
+    height: auto;
+    transition: 0.1s;
+  }
+  .card .bottom-text .btn a {
+    text-decoration: none;
+    background: #0A0C0E;
+    font-size: 1.2rem;
+    color: #EEEEEE;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+  }
+  .card .bottom-text .btn a:hover {
+    transform: scale(0.97);
+    border-radius: 5%;
+  }
+  @media screen and (max-width: 978px) {
+    .card {
+      max-width: 700px;
+      margin: 20px 0;
+      border-radius: 5%;
+    }
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+ /*////////////////////////////////FOOTER////////////////////////////////////////////*/
+ .locura {
+   visibility: hidden;
+ }
+
+ @font-face {
+   font-family: "digital-7" !important;
+   src: url("../fonts/digital-7.ttf");
+ }
+
+ footer {
+
+   /* color: darkcyan; */
+   position: absolute;
+   width: 100%;
+   border-top: darkcyan 2px solid !important;
+   padding-top: 30px;
+   text-align: center;
+
+   /* The image used */
+   background-color: #222831;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/pexels-jakub-novacek-924824.jpg");
+
+   /* Full height */
+
+   opacity: 0.98;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .footer-container {
+
+   display: flex;
+   justify-content: space-between;
+   /* gap: 20px; */
+ }
+
+ .footer-c1 {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+
+
+ .footer-logo img {
+   width: 350px;
+   margin: auto 20px;
+ }
+
+ .foot {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   gap: 20px;
+ }
+
+ .footer-links {
+   align-self: center;
+   display: flex;
+   gap: 10px;
+   margin: auto 40px;
+ }
+
+ .footer-links a {
+   margin-right: 10px;
+   color: #EEEEEE;
+   font-weight: 700;
+   text-transform: uppercase;
+   align-self: center;
+   text-decoration: none;
+ }
+
+
+ .footer-links a:hover {
+   color: #008b8b;
+   text-decoration: none;
+
+ }
+
+ .fl {
+   display: flex;
+   justify-content: center;
+ }
+
+ .fl>ul {
+   display: flex;
+   align-self: center;
+   position: relative !important;
+   padding: 10px;
+   /* top: 20% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%); */
+ }
+
+ ul li {
+   list-style: none;
+ }
+
+ .fl>ul li a {
+   width: 40px !important;
+   height: 40px !important;
+   background-color: #EEEEEE;
+   text-align: center;
+   line-height: 35px;
+   font-size: 20px !important;
+   margin: 0 10px;
+   display: block;
+   border-radius: 50%;
+   position: relative !important;
+   overflow: hidden;
+   border: 3px solid #EEEEEE;
+   z-index: 1;
+ }
+
+ .fl>ul li a .icon {
+   position: relative !important;
+   color: #262626;
+   transition: 0.5s;
+   z-index: 3;
+ }
+
+
+ .fa-x-twitter, .fa-github{
+  font-size: 20px !important;
+ }
+
+ .fl>ul li a:hover .icon {
+   color: #fff;
+   transform: rotateY(360deg);
+ }
+
+ .fl>ul li a:before {
+   content: "";
+   position: absolute !important;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #f00;
+   transition: 0.5s;
+   z-index: 2;
+ }
+
+ ul li a:hover:before {
+   top: 0;
+ }
+
+ ul li:nth-child(1) a:before {
+   background: #c93c72;
+ }
+
+ ul li:nth-child(2) a:before {
+   background: #55acee;
+ }
+
+ ul li:nth-child(3) a:before {
+   background: #0077b5;
+ }
+
+ ul li:nth-child(4) a:before {
+   background: #4078c0;
+ }
+
+
+
+ /* DAYS OF THE WEEK */
+
+
+ .footer-days {
+   position: relative;
+   font-size: 0.7rem;
+ }
+
+ .footer-days div {
+   display: inline-block;
+   margin-right: 5px;
+   color: #999;
+ }
+
+ .footer-days .highlight {
+   color: #008b8b;
+   font-weight: bold;
+ }
+
+ #copyMatt {
+   color: #EEEEEE;
+ }
+
+ /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+}

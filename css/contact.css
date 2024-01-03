@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+body {
+  height: 100% !important;
+  font-family: Open Sans;
+  overflow-x: hidden;
+  line-height: 1.45;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #0A0C0E !important;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/IMG_20201227_150311_252.jpg"); */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+  /*NavBar + Logo*/
+  
+.navbar {
+    display: flex;
+    margin-top: 0% !important;
+    background-color: #0A0C0E;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: #008b8b 2px solid;
+    color: #EEEEEE !important;
+    text-decoration: none !important;
+    padding: 0 !important;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: ease .4s;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navbar-brand {
+    margin-left: 100px;
+  }
+
+  .m_nav {
+    display: none;
+  }
+
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+
+  .hello-container {
+    display: flex;
+    gap: 15px;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .title_t {
+    text-align: center;
+    /* font-weight: 700; */
+    position: relative;
+    /* color: darkcyan; */
+    cursor: default;
+    padding: 30px;
+    /* text-shadow: 1px 1px 2px darkslategrey; */
+  }
+
+  .kenobi {
+    display: none;
+    width: 120px;
+    height: auto;
+    position: relative;
+    transition: ease .8s;
+    border-radius: 10px;
+  }
+
+  .title_t:hover+img {
+    transition: all ease .4s;
+    display: block;
+  }
+
+  .nav a {
+    color: #EEEEEE;
+    font-weight: 700;
+    text-decoration: none !important;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 25px;
+  }
+
+  .nav {
+    background-color: #008b8b;
+    width: fit-content;
+    display: flex;
+    height: fit-content;
+    text-align: center;
+    position: sticky;
+    max-width: fit-content;
+  }
+
+  .nav :hover {
+    color: #0A0C0E;
+    background-color: #4facac;
+  }
+  /*////////////////////////////////CONTACT PAGE///////////////////////////////////////*/
+
+    #title_1 {
+      font-size: 8rem;
+      color: #008b8b;
+      font-family: "Nunito Sans", sans-serif;
+      text-shadow: 1px 1px 2px whitesmoke;
+      font-weight: 700;
+      margin: 50px 50px;
+    }
+
+         .bodc {
+           width: 100vw;
+           display: flex;
+           align-items: baseline;
+         }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 50px 0;
+    }
+
+    .contact{
+      display: flex;
+      gap: 50px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #contact-info {
+      max-width: 600px;
+      color: #EEEEEE;
+      padding: 20px;
+      /* background-color: whitesmoke; */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-text{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .contact-text p{
+      color: #EEEEEE;
+      font-size: 1.2rem;
+    }
+
+    .contact-info ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .contact-info li {
+      font-size: 1.1rem;
+      margin: 5px;
+    }
+
+    .contact-info li .fa-brands{
+      font-size: 1.5rem;
+    }
+
+    .contact-info li #linkedin{
+      color: #0077b5;
+    }
+
+    .contact-info li #instagram{
+      color: #E4405F;
+    }
+
+    .contact-info a {
+      margin-left: 10px;
+      color: #008b8b;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  .contact-image {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
+  }
+
+  .email{
+    color: #008b8b;
+    font-size: 2rem !important;
+  }
+
+ /*////////////////////////////////FOOTER////////////////////////////////////////////*/
+ .locura {
+   visibility: hidden;
+ }
+
+ @font-face {
+   font-family: "digital-7" !important;
+   src: url("../fonts/digital-7.ttf");
+ }
+
+ footer {
+
+   /* color: darkcyan; */
+   position: absolute;
+   width: 100%;
+   border-top: darkcyan 2px solid !important;
+   padding-top: 30px;
+   text-align: center;
+
+   /* The image used */
+   background-color: #222831;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/pexels-jakub-novacek-924824.jpg");
+
+   /* Full height */
+
+   opacity: 0.98;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .footer-container {
+
+   display: flex;
+   justify-content: space-between;
+   /* gap: 20px; */
+ }
+
+ .footer-c1 {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+
+
+ .footer-logo img {
+   width: 350px;
+   margin: auto 20px;
+ }
+
+ .foot {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   gap: 20px;
+ }
+
+ .footer-links {
+   align-self: center;
+   display: flex;
+   gap: 10px;
+   margin: auto 40px;
+ }
+
+ .footer-links a {
+   margin-right: 10px;
+   color: #EEEEEE;
+   font-weight: 700;
+   text-transform: uppercase;
+   align-self: center;
+   text-decoration: none;
+ }
+
+
+ .footer-links a:hover {
+   color: #008b8b;
+   text-decoration: none;
+
+ }
+
+ .fl {
+   display: flex;
+   justify-content: center;
+ }
+
+ .fl>ul {
+   display: flex;
+   align-self: center;
+   position: relative !important;
+   padding: 10px;
+   /* top: 20% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%); */
+ }
+
+ ul li {
+   list-style: none;
+ }
+
+ .fl>ul li a {
+   width: 40px !important;
+   height: 40px !important;
+   background-color: #EEEEEE;
+   text-align: center;
+   line-height: 35px;
+   font-size: 20px !important;
+   margin: 0 10px;
+   display: block;
+   border-radius: 50%;
+   position: relative !important;
+   overflow: hidden;
+   border: 3px solid #EEEEEE;
+   z-index: 1;
+ }
+
+ .fl>ul li a .icon {
+   position: relative !important;
+   color: #262626;
+   transition: 0.5s;
+   z-index: 3;
+ }
+
+
+ .fa-x-twitter,
+ .fa-github {
+   font-size: 20px !important;
+ }
+
+ .fl>ul li a:hover .icon {
+   color: #fff;
+   transform: rotateY(360deg);
+ }
+
+ .fl>ul li a:before {
+   content: "";
+   position: absolute !important;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #f00;
+   transition: 0.5s;
+   z-index: 2;
+ }
+
+ ul li a:hover:before {
+   top: 0;
+ }
+
+ ul li:nth-child(1) a:before {
+   background: #c93c72;
+ }
+
+ ul li:nth-child(2) a:before {
+   background: #55acee;
+ }
+
+ ul li:nth-child(3) a:before {
+   background: #0077b5;
+ }
+
+ ul li:nth-child(4) a:before {
+   background: #4078c0;
+ }
+
+
+
+ /* DAYS OF THE WEEK */
+
+
+ .footer-days {
+   position: relative;
+   font-size: 0.7rem;
+ }
+
+ .footer-days div {
+   display: inline-block;
+   margin-right: 5px;
+   color: #999;
+ }
+
+ .footer-days .highlight {
+   color: #008b8b;
+   font-weight: bold;
+ }
+
+ #copyMatt {
+   color: #EEEEEE;
+ }
+
+ /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+ }

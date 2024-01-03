@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script type="text/javascript" defer="" src="js/projects.js"></script>
+    <script type="text/javascript" defer="" src="js/clock.js"></script>
+    <script type="text/javascript" defer="" src="js/mobile.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <!-- FONT LINK -->
+    <script src="https://use.fontawesome.com/b406684c95.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Matt's Site</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top" id="navigation">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-transparent-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+
+        <div class="hello-container">
+          <!-- <h2 class="title_t" id="title-t">HELLO THERE</h2> -->
+          <div class="title_t"></div>
+          <img class="kenobi" src="images/hello-star-wars.gif" />
+        </div>
+
+        <div id="slash"></div>
+        <div class="nav" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link"
+            id="nav-home-tab"
+            href="index.html"
+            role="tab"
+            >HOME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            href="aboutme.html"
+            role="tab"
+            >ABOUT ME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-project-tab"
+            href="projects.html"
+            role="tab"
+            >PORTFOLIO</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            href="contact.html"
+            role="tab"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+
+      <!--MOBILE MENU-->
+      <nav id="nav" class="m_nav" role="navigation">
+        <!-- ACTUAL NAVIGATION MENU -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+          hidden
+        >
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutme.html" class="nav__link">ABOUT ME</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="proj">
+        <!--Intro to My Work-->
+        <section class="page-wrap text1" id="text1">
+          <h2 id="title_1">PORTFOLIO</h2>
+
+          <!-- <p>
+            <br />
+            From simple Website Design, to automated SaaS platform features,
+            this page showcases my best examples of what UX/UI design and
+            development can do for your business. The core of my work is to
+            create a easy user flow and a clean design that will help your
+            business grow.
+          </p> -->
+        </section>
+
+        <!-- <hr class="section-divider" /> -->
+
+        <!-- CASE STUDIES -->
+
+        <div class="int-c">
+          <h1 id="int-t">CASE STUDIES</h1>
+          <section class="page-wrap img-week" id="cs">
+            <!--JOINT EFFORTS-->
+            <a
+              href="comingsoon.html"
+              class="vid_cont"
+              id="joint-container"
+              target="_blank"
+            >
+              <div class="web-content">
+                <div class="w-46 f-left pad-15" id="logi-video">
+                  <div class="vid">
+                    <img
+                      src="./images/prototype-showcase.gif"
+                      width="450"
+                      height="auto"
+                      alt="Joint Efforts GIF"
+                      id="JE-gif"
+                    />
+                  </div>
+                </div>
+
+                <div class="txt">
+                  <div class="txt2 w-46 col-5" id="text9">
+                    <p>
+                      Surveys Dashboard designed to cater to healthcare
+                      professionals, providing a comprehensive view of their
+                      data utilization and emphasizing the significance of
+                      survey participation
+                    </p>
+                  </div>
+                  <div class="des-icons">
+                    <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+                    <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+                    <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+                  </div>
+                  <h3>JOINT EFFORTS</h3>
+                </div>
+              </div>
+              <div class="empty"></div>
+            </a>
+
+            <!--LOGICHAINGE-->
+            <a
+              href="logichainge.html"
+              class="vid_cont"
+              id="logi-container"
+              target="_blank"
+            >
+              <div class="web-content">
+                <div class="w-46 f-left pad-15" id="logi-video">
+                  <div class="vid">
+                    <video width="450" height="auto" autoplay muted>
+                      <source src="logichainge.mp4" type="video/mp4" />
+                      <source src="logichainge.mp4" type="video/ogg" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+
+                <div class="txt">
+                  <div class="txt2 w-46 col-5" id="text9">
+                    <p>
+                      Our objective was to develop a Groupage Transportation
+                      Management System (TMS) and streamline this operation as
+                      an additional feature integrated into our established SaaS
+                      platform
+                    </p>
+                  </div>
+                  <div class="des-icons">
+                    <i class="fab fa-vuejs" data-icon="vue" title="Vue.js"></i>
+                    <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+                    <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+                    <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+                  </div>
+                  <h3>LOGICHAINGE</h3>
+                </div>
+              </div>
+              <div class="empty"></div>
+            </a>
+
+            <!--MARKR-->
+            <a
+              href="Pizarra_Blog/index.html"
+              target="_blank"
+              class="vid_cont"
+              id="markr-container"
+            >
+              <div class="web-content">
+                <div class="w-46 f-left pad-15" id="markr-video">
+                  <div class="vid">
+                    <video width="450" height="auto" autoplay muted>
+                      <source src="markr-preview.mp4" type="video/mp4" />
+                      <source src="markr-preview.ogg" type="video/ogg" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+
+                <div class="txt">
+                  <div class="txt2 w-46 col-5" id="text8">
+                    <p>
+                      An advanced Brand Guide System creator and editing tool
+                      designed to efficiently manage multiple Brand Guides
+                      simultaneously
+                    </p>
+                  </div>
+                  <div class="des-icons">
+                    <i class="fab fa-vuejs" data-icon="vue" title="Vue.js"></i>
+                    <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+                    <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+                    <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+                  </div>
+                  <h3>MARKR. TOOL</h3>
+                </div>
+              </div>
+              <div class="empty"></div>
+            </a>
+
+            <div id="modal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="modal-content" id="modalContent"></div>
+            </div>
+          </section>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!--DIGITAL DESIGN-->
+        <div class="web_c">
+          <h1 id="webT">DIGITAL DESIGN</h1>
+          <section class="page-wrap img-week" id="wb">
+            <a
+              href="MATIAS/index.html"
+              target="_blank"
+              class="vid_cont"
+              id="web1"
+            >
+              <div class="web-content">
+                <div class="video w-46 f-left pad-15" id="fport">
+                  <div class="vid">
+                    <video width="450" height="auto" autoplay muted>
+                      <source src="first_port.mp4" type="video/mp4" />
+                      <source src="first_port.ogg" type="video/ogg" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="txt">
+                  <div class="txt2 w-46 col-5" id="text2">
+                    <p>
+                      The initial portfolio I developed represents a compilation
+                      of my work up to that point in time. Certain design
+                      elements from it have been incorporated into the current
+                      site as a tribute to my early work and its progression
+                    </p>
+                  </div>
+                  <div class="des-icons">
+                    <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+                    <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+                  </div>
+                  <h3>FIRST PORTFOLIO</h3>
+                </div>
+                <div></div>
+              </div>
+              <div class="empty"></div>
+            </a>
+
+            <a
+              href="HousingToHome/index.html"
+              target="_blank"
+              class="vid_cont"
+              id="web2"
+            >
+              <div class="web-content">
+                <div class="w-46 f-left pad-15" id="fhth">
+                  <div class="vid">
+                    <video width="450" height="auto" autoplay muted>
+                      <source src="FH.mp4" type="video/mp4" />
+                      <source src="FH.ogg" type="video/ogg" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="txt">
+                  <div class="txt2 w-46 col-5" id="text3">
+                    <p>
+                      A housing platform catering to the Housing sector,
+                      designed to ensure accessibility for users of all
+                      experience levels, from novices to seasoned professionals
+                    </p>
+                  </div>
+                  <div class="des-icons">
+                    <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+                    <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+                    <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+                  </div>
+                  <h3>FROM HOUSING TO HOME</h3>
+                </div>
+              </div>
+              <div class="empty"></div>
+            </a>
+
+            <a
+              target="_blank"
+              href="MissStarlingEndVersion/MissStarling/index.html"
+              class="vid_cont"
+              id="web3"
+            >
+              <div class="web-content">
+                <div class="w-46 f-left pad-15" id="miss-s">
+                  <div class="vid">
+                    <video width="450" height="auto" autoplay muted>
+                      <source src="MS_website_demo.mp4" type="video/mp4" />
+                      <source src="MS_website_demo.ogg" type="video/ogg" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="txt">
+                  <div class="txt2 w-46 col-5" id="text4">
+                    <p>
+                      This website was commissioned to our team as a formal
+                      request by our client, with the aim of creating a
+                      sophisticated online presence for a talented emerging
+                      singer and songwriter
+                    </p>
+                  </div>
+                  <div class="des-icons">
+                    <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+                    <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+                    <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+                    <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+                  </div>
+                  <h3>MISS STARLING PROJECT</h3>
+                </div>
+              </div>
+              <div class="empty"></div>
+            </a>
+          </section>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!-- Mobile Apps -->
+        <div class="mob_c">
+          <h1 id="apps-title">MOBILE APPS</h1>
+          <section class="page-wrap img-week">
+            <!--IOS-->
+            <a
+              href="comingsoon.html"
+              class="vid_cont"
+              id="mob-2"
+              target="_blank"
+            >
+              <div class="txt" id="txt5">
+                <div class="txt2 w-46 col-5" id="text6">
+                  <p>
+                    An iOS app specifically designed for a mature audience of
+                    gamers. Our app features comprehensive guides tailored to
+                    the needs of older individuals, ensuring a seamless
+                    experience in completing even the most intricate and lengthy
+                    games
+                  </p>
+                </div>
+                <div class="des-icons">
+                  <i class="fab fa-apple" data-icon="apple" title="iOS"></i>
+                  <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+                  <i class="devicon-swift-plain"></i>
+                </div>
+                <h3>iOS PROJECT</h3>
+              </div>
+
+              <div class="w-46 f-left pad-15" id="ios-p">
+                <div class="vid">
+                  <video width="260" height="auto" autoplay muted>
+                    <source src="images/guidemania-poc.mov" type="video/mp4" />
+                    <source src="images/guidemania-poc.mov" type="video/ogg" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-c1">
+          <div class="footer-logo">
+            <img src="images/logo-design.png" alt="Logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="projects.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="foot">
+          <!--DAYS OF THE WEEK-->
+          <div id="days-of-week" class="footer-days">
+            <!-- Days of the week will be inserted dynamically -->
+          </div>
+
+          <div class="fl">
+            <div class="spacer"></div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/the_gamerlands/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/matias-flores-93673394/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="copyMatt">&copy; Matias Flores <span id="year"></span></span>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/dd1d486564.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
