@@ -414,6 +414,19 @@ body {
     align-items: baseline;
   }
 
+  .des-icons .icon{
+    align-self: center;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tailwind-css {
+    width: 35px;
+    height: 35px;
+    align-self: baseline;
+  }
+
   .des-icons .fab{
     color: whitesmoke;
     font-size: 2rem;

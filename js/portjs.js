@@ -106,6 +106,6 @@ function prevSlide() {
 
 // Initial setup
 showSlide(currentIndex);
-setInterval(nextSlide, 6000);
+setInterval(nextSlide, 5000);
 
 

@@ -495,6 +495,21 @@ body {
   height: auto;
 }
 
+#tailwind-icon {
+  align-self: center;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tailwindcss-2 {
+  width: 35px;
+  height: 35px;
+  align-self: baseline;
+  color: #EEEEEE;
+}
+
 #int-t {
   font-weight: 700;
   cursor: default;
