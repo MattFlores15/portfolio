@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script type="text/javascript" defer="" src="js/clock.js"></script>
+    <script type="text/javascript" defer="" src="js/mobile.js"></script>
+    <script type="text/javascript" defer="" src="js/je.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <!--My own CSS-->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/je.css" />
+
+    <!-- FONT LINK -->
+    <script src="https://use.fontawesome.com/b406684c95.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Project-Template</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top" id="navigation">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+
+        <div class="hello-container">
+          <!-- <h2 class="title_t" id="title-t">HELLO THERE</h2> -->
+          <div class="title_t"></div>
+          <img class="kenobi" src="images/hello-star-wars.gif" />
+        </div>
+
+        <div id="slash"></div>
+        <div class="nav" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link"
+            id="nav-home-tab"
+            href="index.html"
+            role="tab"
+            >HOME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            href="aboutme.html"
+            role="tab"
+            >ABOUT ME</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-project-tab"
+            href="projects.html"
+            role="tab"
+            >PORTFOLIO</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            href="contact.html"
+            role="tab"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+
+      <!--MOBILE MENU-->
+      <nav id="nav" class="m_nav" role="navigation">
+        <!-- ACTUAL NAVIGATION MENU -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-design.png"
+            class="logo"
+            alt=" logo image"
+            id="logo-n"
+          />
+        </a>
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+          hidden
+        >
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutme.html" class="nav__link">ABOUT ME</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <ul>
+        <li><a href="#project-overview">Overview</a></li>
+        <li><a href="#project-goals">Challenge & Goals</a></li>
+        <li><a href="#project-process">Process</a></li>
+        <li><a href="#project-research">Research</a></li>
+        <li><a href="#project-design">Design</a></li>
+        <li><a href="#project-development">Development</a></li>
+        <li><a href="#project-results">Results</a></li>
+        <li><a href="#project-conclusion">Conclusion</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- Case Study Title -->
+      <div class="project-container">
+        <div class="project-icon-m">
+          <img src="images/icon-projects-design.png" alt="projects icon" />
+          <p>CASE STUDY</p>
+        </div>
+        <div class="project-title">
+          <h1>JOINT EFFORTS</h1>
+        </div>
+        <div class="project-subtitle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            color="#0A0C0E"
+            fill="currentColor"
+            class="bi bi-people-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+            />
+          </svg>
+          <h2 class="subtitle-client">Client:</h2>
+          <h2>Samen aan Z</h2>
+        </div>
+      </div>
+      <hr class="section-divider" />
+
+      <!-- Project Basics -->
+      <section class="project-basics" id="project-basics">
+        <div class="empty"></div>
+        <div class="basics-container">
+          <div class="basics-role">
+            <h3>Role</h3>
+            <ul>
+              <!-- Dynamic content for roles from JSON -->
+              <p>Front-End Developer</p>
+              <p>UX Designer</p>
+            </ul>
+          </div>
+          <div class="basics-duration">
+            <h3>Duration</h3>
+            <p>5 months</p>
+            <!-- Dynamic content for duration from JSON -->
+          </div>
+          <div class="basics-type">
+            <h3>Type</h3>
+            <p>Dashboard
+            </br>
+            (Student Project)</p>
+            <!-- Dynamic content for project type from JSON -->
+          </div>
+          <div class="basics-tech">
+            <h3>Tech</h3>
+            <div class="des-icons">
+              <!-- Dynamic content for tech stack from JSON -->
+              <i class="fab fa-figma" data-icon="figma" title="Figma"></i>
+              <i class="fab fa-angular" data-icon="angular" title="Angular"></i>
+              <i class="fab fa-html5" data-icon="html" title="HTML"></i>
+              <i class="fab fa-css3-alt" data-icon="css" title="CSS"></i>
+              <i class="fab fa-js" data-icon="js" title="JavaScript"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Learning Outcomes -->
+      <section id="learning-outcomes">
+        <div class="project-outcomes">
+          <div class="outcomes-title">
+            <h2>Learning Outcomes</h2>
+          </div>
+          <div class="outcomes-container">
+            <div class="outcome" id="professional-duties">
+              <h3>UI Analysis & Advice</h3>
+              <p style="font-size: 1rem;">
+                You analyse the user, the interaction, and the user experience,
+                also taking state of the art interactive technologies into
+                account. You select a suitable design process to be able to
+                advise on UX interventions based on a validated UX design.
+              </p>
+            </div>
+            <div class="outcome" id="situation-orientation">
+              <h3>UI Execution & Validation</h3>
+              <p>
+                You execute and evaluate the user experience of an interactive
+                product. You document the development process for the
+                stakeholders.
+              </p>
+            </div>
+            <div class="outcome" id="future-oriented">
+              <h3>Future-oriented organisation</h3>
+              <p>
+                You carry out a problem analysis and on that basis, you
+                determine the definitive problem and elaborate on this in a
+                project plan.
+              </p>
+            </div>
+            <div class="outcome" id="investigative-problem">
+              <h3>Investigative problem solving</h3>
+              <p style="font-size: 1.1rem;">
+                You formulate sub-questions pertaining to the primary question
+                and answer these using relevant research methods. You use the
+                conclusions of the sub-questions to justify (design) choices.
+              </p>
+            </div>
+            <div class="outcome" id="personal-leadership">
+              <h3>Personal Leadership</h3>
+              <p>
+                You methodically reflect on your professional identity and
+                personal development.
+              </p>
+            </div>
+            <div class="outcome" id="targeted-interaction">
+              <h3>Goal-oriented interaction</h3>
+              <p>
+                You communicate with different stakeholders and team members
+                about the ICT assignment, taking into account an international
+                context.
+              </p>
+            </div>
+            <div class="outcome" id="software-design">
+              <h3>Software design and realisation</h3>
+              <p>
+                You create & design software with existing components or
+                libraries using predetermined quality criteria and version
+                control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Overview -->
+      <section id="project-overview">
+        <div class="project-overview">
+          <div class="overview">
+            <div class="overview-title"><h2>Overview</h2></div>
+            <div class="overview-intro-p">
+              <!-- Dynamic content for project overview from JSON -->
+              <p>
+                The goal of the Samen aan Z project is to address the critical issue of the rising staff shortage in the healthcare industry in the Netherlands and Belgium. With a significant portion of the population aged 50 and above, there is an urgent need to find sustainable solutions for workforce retention.                
+              </p>
+                <br />
+                <br />
+                <h3>Goal of the project</h3>
+                <br />
+                <p>The primary objective of the Joint Efforts project is to collect valuable data through surveys, enabling researchers to analyze and identify potential solutions for improving healthcare worker retention. Our focus lies in designing a user-friendly dashboard that not only encourages healthcare workers to participate in surveys but also provides them with insights into how their data contributes to enhancing their working conditions.</p>
+                <br />
+                <br />
+                <a
+                  href="https://interregvlaned.eu/samen-aan-z/over-ons"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit Project Website</a
+                >
+              <div class="image-overview">
+                <img
+                  src="images/Samen-aan-Z.png"
+                  alt="project overview"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Goals -->
+      <section id="project-goals">
+        <div class="project-goals">
+          <div class="goals-container">
+            <div class="goals-title"><h2>Challenge & Goals</h2></div>
+            <div class="goals-p">
+              <!-- Dynamic content for project goals from JSON -->
+              <p>
+                The healthcare industry faces a substantial staff shortage, and engaging healthcare workers in surveys is a significant challenge. The existing surveys may have usability issues, and there is a need to effectively communicate the importance of participation.
+              </p>
+            </div>
+            <div class="goals">
+              <!-- Dynamic content for project short-term goals from JSON -->
+              <h2>Goals</h2>
+        
+              <ul>
+                <li>
+                  <h4>Survey Improvement:</h4>
+                  <p>Identify and address issues with the current surveys through usability testing and expert interviews.</p>
+                </li>
+                <li>
+                  <h4>Importance Communication:</h4>
+                  <p>Develop strategies to communicate the significance of surveys to healthcare workers through focus groups, diaries, and probes.</p>
+                </li>
+                <li>
+                  <h4>Appealing and Engaging Surveys:</h4>
+                  <p>Utilize design pattern search and specification to make surveys more appealing and engaging.</p>
+                </li>
+                <li>
+                  <h4>Dashboard Design:</h4>
+                  <p>Conduct a literature study and prototyping to create an aesthetically pleasing and user-friendly dashboard for healthcare workers.</p>
+                </li>
+                <li>
+                  <h4>Continuous Participation:</h4>
+                  <p>Implement paper prototypes, field trials, and A/B testing to increase the likelihood of continued survey participation.</p>
+                </li>
+              </ul>
+
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Process -->
+        <section id="project-process">
+        <div class="project-process">
+            <div class="process-container">
+            <div class="process-title"><h2>Design Process</h2></div>
+            <div class="process-content">
+                <!-- Placeholder for the methodology image -->
+                <img src="images/Design Process-JE.svg" alt="Methodology Image" class="methodology-image">
+
+                <!-- Content for the methodology -->
+                <p>
+                Our UX design process for the Joint Efforts project is structured to address the unique challenges posed by the healthcare industry's staff shortage. We've adopted a systematic approach, integrating various research methods, iterative design cycles, and continuous stakeholder engagement. Our process revolves around refining the existing survey system, designing an engaging dashboard, and ensuring seamless collaboration within our interdisciplinary team.
+                </p>
+                <br/>
+
+                <p>
+                Our journey is ongoing, and we remain committed to refining our designs based on user feedback, ensuring the Joint Efforts project achieves its goal of enhancing healthcare worker retention in the long run.
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <hr class="section-divider" />
+
+      <!-- Project Research -->
+      <section id="project-research">
+        <div class="project-research">
+          <div class="research-content">
+            <div class="research-title"><h2>Research</h2></div>
+            <div class="section">
+              <h3>Introduction</h3>
+              <!-- Dynamic content for research introduction from JSON -->
+              <p>
+                Through stakeholder and expert interviews, coupled with insights from end-users, 
+                we navigated the landscape of healthcare professionals' needs. This section unveils 
+                the strategic decisions forged through meticulous design research, laying the groundwork 
+                for our UX portfolio site. Join us in unraveling the essence of our research, guiding the 
+                creation of an impactful user experience.
+              </p>
+            </div>
+            <div class="research-questions">
+                <div class="section">
+              <h4 class="main-question">Main Question</h4>
+              <!-- Dynamic content for main research question from JSON -->
+              <p class="main-q">How can we make the existing program more appealing and engaging to healthcare workers?</p>
+            </div>
+            <div class="section">
+              <h5>Subquestions</h5>
+              <!-- Dynamic content for subquestions from JSON -->
+              <ul>
+                <li>What are the issues of the current surveys? </li>
+                <li>How do we communicate the importance of the survey to the healthcare workers in the dashboard? </li>
+                <!-- Add more subquestions as needed -->
+              </ul>
+            </div>
+            </div>
+            <div class="research-cards">
+             <!-- Stakeholder Interview Card -->
+            <div class="research-card stakeholder-interview">
+            <div class="research-card-title"><h2>Stakeholder Interview</h2></div>
+            <div class="section">
+                <h3>Key Points</h3>
+                <!-- Dynamic content for stakeholder interview from JSON -->
+                <p>
+                The stakeholders emphasized the need to make surveys more engaging and attractive. 
+                Existing challenges include low engagement, uninteresting surveys, and the reliance on email notifications. 
+                </p>
+            </div>
+            <div class="section">
+                <h5>Insights</h5>
+                <!-- Dynamic content for insights from stakeholder interview -->
+                <ul>
+                <li>The dashboard must be engaging without altering the survey structure.</li>
+                <li>Consider a mobile app for push notifications.</li>
+                <!-- Add more insights as needed -->
+                </ul>
+            </div>
+            <!-- <div class="section">
+                <div class="download-link">
+                    <a href="/path/to/stakeholder_interview.pdf" download>Download PDF</a>
+                </div>
+            </div> -->
+            </div>
+
+            <!-- Expert Interview Card -->
+            <div class="research-card expert-interview">
+            <div class="research-card-title"><h2>Expert Interview</h2></div>
+            <div class="section">
+                <h3>Major Improvements</h3>
+                <!-- Dynamic content for major improvements from expert interview -->
+                <p>
+                Significant improvements were made considering time constraints and the goal of making surveys user-friendly. 
+                Positive feedback is expected at the end of the month.
+                </p>
+            </div>
+            <div class="section">
+                <h5>Key Points</h5>
+                <!-- Dynamic content for key points from expert interview -->
+                <ul>
+                <li>Consideration of time constraints during survey creation.</li>
+                <li>Focus on making surveys more user-friendly.</li>
+                <!-- Add more key points as needed -->
+                </ul>
+            </div>
+            </div>
+
+            <!-- End-User Interview Card -->
+            <div class="research-card end-user-interview">
+            <div class="research-card-title"><h2>End-User Interview</h2></div>
+            <div class="section">
+                <h3>Work-Life Insights</h3>
+                <!-- Dynamic content for work-life insights from end-user interview -->
+                <p>
+                The end-user, a healthcare worker since 2004, highlighted work-life challenges and openness to technology. 
+                Break times, daily routine, and dealing with staff shortages were discussed.
+                </p>
+            </div>
+            <div class="section">
+                <h5>Technology Adoption</h5>
+                <!-- Dynamic content for technology adoption from end-user interview -->
+                <ul>
+                <li>Openness to technology but not involved in IT decisions.</li>
+                <li>Preference for advance notice and open to notifications on various platforms.</li>
+                <!-- Add more insights as needed -->
+                </ul>
+            </div>
+            </div>
+
+            <!-- Design Research Card -->
+            <div class="research-card design-research">
+            <div class="research-card-title"><h2>Design Research</h2></div>
+            <div class="section">
+                <h3>Problem Statement</h3>
+                <!-- Dynamic content for problem statement from design research -->
+                <p>
+                The problem addressed is the need for a brand guide to convey the values and message of the project consistently.
+                </p>
+            </div>
+            <div class="section">
+                <h5>Brand Guide Components</h5>
+                <!-- Dynamic content for brand guide components from design research -->
+                <ul>
+                <li>Logo guidelines, color palette, typography, imagery, and tone of voice.</li>
+                <li>Choices based on iterative color selection and alignment with healthcare aesthetics.</li>
+                <!-- Add more components and choices as needed -->
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class="ux-architecture">
+                <div class="section">
+                <h3>User Persona</h3>
+                <img src="images/persona_child_doc.png" alt="persona-jointefforts">
+                <h3>User Journey</h3>
+                <img src="images/User_journey_child_doc.png" alt="user-journey-jointefforts">
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Design Phase -->
+      <section id="project-design">
+        <div class="design-phase">
+          <div class="design-card">
+            <div class="design-title">
+              <h2>Design</h2>
+            </div>
+            <div class="section">
+              <h3>Introduction</h3>
+              <!-- Dynamic content for design phase introduction from JSON -->
+              <p>
+                Our mission: crafting a visually compelling and user-centric dashboard that not only addresses 
+                the challenges of low survey engagement but sets a new standard for enhancing healthcare worker retention.
+                </br>
+                </br>
+                Through iterative wireframes, dynamic prototypes, and insightful user testing, 
+                our journey unfolds—a synthesis of creativity and data-driven refinement, ensuring 
+                the Joint Efforts dashboard is not merely a solution but a seamless, engaging experience for healthcare professionals.
+              </p>
+            </div>
+            <!-- Add Typography Section -->
+            <div class="section typography">
+                <h3>Typography</h3>
+                <div class="typography-content">
+                <p>
+                Our choice of typography revolves around readability and adaptability across web and mobile applications. We
+                have selected Roboto for its versatility, ensuring a consistent and professional presentation.
+                </p></div>
+            </div>
+            <!-- Add Color Palette Section -->
+            <div class="section color-palette">
+                <h3>Color Palette</h3>
+                <div class="color-palette-content">
+                <p>
+                Our color palette incorporates soft tones such as blue, purple, and green. These colors were chosen for their
+                association with calmness, trust, and professionalism, aligning with the aesthetics of healthcare. Feedback and
+                iterations ensured a final palette that resonates with our brand identity.
+                </p></div>
+            </div>
+            <div class="section">
+              <h3>Ideation</h3>
+              <!-- Dynamic content for sketches images from JSON -->
+              <div class="image-gallery" id="sketches-gallery">
+                <img
+                  src="images/ideation-sketches-mobile.jpg"
+                  alt="Sketches"
+                  data-zoomable="true"
+                  data-modal="modal-1"
+                />
+                <img src="images/ideation-sketches.jpg" alt="sketches-mobile">
+              </div>
+            </div>
+            <div class="section">
+              <h3>Wireframes</h3>
+              <div class="image-gallery wireframes-gallery" id="wireframes-gallery">
+                <img
+                  src="images/Wireframes-v2-black.png"
+                  alt="Wireframes"
+                  data-zoomable="true"
+                  data-modal="modal-2"
+                />
+                <img src="images/Wireframes - mobile-black.png" alt="Wireframes-mobile">
+              </div>
+              <div class="wireframes-text">
+              <p>Our initial wireframes paved the way for high-fidelity interactive prototypes, focusing on essential functionalities and user flows. The iterative development process involved continuous refinement, guided by user-centric principles and insights gathered from stakeholder feedback</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="intro-prototypelink">
+                <h3>Interactive Prototype</h3>
+                <!-- Dynamic content for prototype link from JSON -->
+                <a
+                  href="https://www.figma.com/proto/JuBgdnitl4vOJd65VmYDkY/Joint-Efforts-Prototype?type=design&node-id=25-9466&t=QVpi3nAjKH31sSt0-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=25%3A9466&mode=design"
+                  target="_blank"
+                  alt="Prototype Link"
+                  class="prototype-link"
+                  >Try it!</a
+                >
+              </div>
+              <p>
+                Prototype introduction text goes here. Describe the interactive
+                prototype and its features.
+              </p>
+              <!-- Dynamic content for prototype images from JSON -->
+              <div class="image-gallery" id="prototype-gallery">
+                <img
+                  src="images/placeholder-image.png"
+                  alt="Prototype"
+                  data-zoomable="true"
+                  data-modal="modal-3"
+                />
+                <!-- Add more prototype images as needed -->
+              </div>
+            </div>
+            <div class="section">
+              <h3>User Flow & Feedback</h3>
+              <!-- Dynamic content for user flow images from JSON -->
+              <div class="design-userflow">
+                <div class="image-gallery" id="flow-gallery">
+                  <img
+                    src="images/placeholder-image.png"
+                    alt="User Flow"
+                    data-zoomable="true"
+                    data-modal="modal-4"
+                  />
+                  <!-- Add more user flow images as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Project Development Phase -->
+      <section id="project-development">
+        <div class="project-development">
+          <div class="development-card">
+            <div class="development-title">
+              <h2>Development</h2>
+            </div>
+            <div class="section" id="development-introduction">
+              <h3>Introduction</h3>
+              <!-- Dynamic content for development phase introduction from JSON -->
+              <p>
+                Development phase introduction text goes here. Describe the
+                development phase and its technologies used.
+              </p>
+              <div class="technologies">
+                <!-- Dynamic content for technologies icons from JSON -->
+                <i class="tech-icon devicon-vuejs-plain" data-icon="Vue.js"
+                  ><p>Vuejs</p>
+                </i>
+                <i class="tech-icon devicon-python-plain" data-icon="Python"
+                  ><p>Python</p>
+                </i>
+                <i class="tech-icon devicon-django-plain" data-icon="Django"
+                  ><p>Django</p></i
+                >
+                <i class="tech-icon devicon-vuetify-line" data-icon="Vuetify"
+                  ><p>Vuetify</p></i
+                >
+                <!-- Add more technology icons as needed -->
+              </div>
+            </div>
+            <div class="section"></div>
+            <div class="sprint-container">
+              <div class="development-sprints-title">
+                <h3>Sprints</h3>
+                <!-- Dynamic content for development sprints from JSON -->
+                <p>
+                  Describe the development sprints and their goals. Include
+                  images showing the progress of each sprint.
+                </p>
+              </div>
+              <div class="sprint-card">
+                <!-- Add a modal container -->
+                <div id="modal-container"></div>
+                <div class="sprint-header">
+                  <!-- Dynamic content for sprint title from JSON -->
+                  <h4>Sprint 1</h4>
+                </div>
+                <div class="sprint-content">
+                  <ul>
+                    <!-- Dynamic content for sprint tasks from JSON -->
+                    <li>Task 1</li>
+                    <li>Task 2</li>
+                    <!-- Add more tasks as needed -->
+                  </ul>
+                  <!-- Dynamic content for sprint image from JSON -->
+                  <div class="zoomable-image">
+                    <img
+                      src="images/placeholder-image.png"
+                      alt="Sprint 1 Image"
+                      data-zoomable="true"
+                      data-modal="modal-1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the above sprint-card structure for each sprint -->
+              <!-- Sprint 2 -->
+              <div class="sprint-card">
+                <!-- Add a modal container -->
+                <div id="modal-container"></div>
+                <div class="sprint-header">
+                  <!-- Dynamic content for sprint title from JSON -->
+                  <h4>Sprint 2</h4>
+                </div>
+                <div class="sprint-content">
+                  <ul>
+                    <!-- Dynamic content for sprint tasks from JSON -->
+                    <li>Task 1</li>
+                    <li>Task 2</li>
+                    <!-- Add more tasks as needed -->
+                  </ul>
+                  <!-- Dynamic content for sprint image from JSON -->
+                  <div class="zoomable-image">
+                    <img
+                      src="images/placeholder-image.png"
+                      alt="Sprint 2 Image"
+                      data-zoomable="true"
+                      data-modal="modal-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- End of Sprint 2 -->
+              <!-- Repeat the sprint-card structure for other sprints as needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Results and Impact Section -->
+
+<section id="project-results">
+  <div class="results-impact">
+    <div class="results">
+      
+      <div class="results-title"><h2>Impact</h2><div class="learning-outcomes"></div></div>
+      <div class="results-intro">
+        <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dicta ad dolorum labore odit ipsam doloremque placeat quibusdam est nostrum provident repellat, laudantium soluta accusamus sapiente maiores rerum perspiciatis deserunt?
+        </p>
+      </div>
+      <div class="impact-container">
+        <div class="impact-box">
+          <h3>Impact on the Logistics Service Provider Industry</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quas molestiae natus obcaecati expedita magni error eveniet sunt officiis consequatur, eos perspiciatis delectus dolor. Molestiae fugiat aliquam blanditiis veritatis!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <hr class="section-divider" />
+
+      <!-- Conclusion -->
+      <section id="project-conclusion">
+        <div class="project-conclusion">
+          <div class="conclusion">
+            <div class="conclusion-title"><h2>Conclusion</h2><div class="learning-outcomes"></div>
+          </div>
+          <div class="conclusion-intro">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quas molestiae natus obcaecati expedita magni error eveniet sunt officiis consequatur, eos perspiciatis delectus dolor. Molestiae fugiat aliquam blanditiis veritatis!
+            </p>
+            <br/>
+          
+          </div>
+          <div class="conclusion-container">
+            <div class="conclusion-project-reflection">
+              <h3>Project Reflection</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur officiis quasi quae voluptates facere rerum earum quod quaerat deserunt distinctio quam soluta voluptatem nesciunt, suscipit excepturi repellendus iure aperiam laudantium!</p>
+
+
+              <div class="conclusion-strenghts">
+              <h4>Strengths of the Project</h4>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis corrupti voluptatum cum! Laudantium earum vel doloremque ad delectus dicta commodi. Quisquam voluptas ad nemo earum doloremque fugit dicta sed?</li>
+            </ul>
+            </div>
+
+            <div class="conclusion-challenges">
+              <h4>Challenges of the Project</h4>
+            <ul>
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum labore atque iste distinctio quidem ex a repellat vitae inventore, nulla nesciunt qui, expedita enim cum, dicta cupiditate eos ab nemo.</li>
+              
+            </ul>
+            </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-c1">
+          <div class="footer-logo">
+            <img src="images/logo-design.png" alt="Logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="projects.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="foot">
+          <!--DAYS OF THE WEEK-->
+          <div id="days-of-week" class="footer-days">
+            <!-- Days of the week will be inserted dynamically -->
+          </div>
+
+          <div class="fl">
+            <div class="spacer"></div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/the_gamerlands/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/pizza_istheway" target="_blank"><i class="fa-brands fa-x-twitter icon"></i></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/matias-flores-93673394/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/MattFlores15" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="copyMatt">&copy; Matias Flores <span id="year"></span></span>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://kit.fontawesome.com/dd1d486564.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
