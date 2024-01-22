@@ -1,4 +1,7 @@
 /////////////SIDEBAR/////////////////
+window.addEventListener('load', function() {
+  // Show the sidebar when the page is loaded
+  document.querySelector('.sidebar').style.opacity = 1;
 
 window.addEventListener('scroll', function() {
   var sidebar = document.querySelector('.sidebar');
@@ -33,26 +36,27 @@ window.addEventListener('scroll', function() {
   }
 });
  
-var mybutton = document.getElementById("myBtn");
-var sidebar = document.getElementById("sidebar");
-var footer = document.getElementById("footer");
+  var mybutton = document.getElementById("myBtn");
+  var sidebar = document.getElementById("sidebar");
+  var footer = document.getElementById("footer");
 
-window.onscroll = function() {
-  scrollFunction();
-};
+  window.onscroll = function() {
+    scrollFunction();
+  };
 
-function scrollFunction() {
-  if (window.innerHeight + window.scrollY >= footer.offsetTop) {
-    mybutton.style.display = "none";
-  } else if (window.scrollY === 0) {
-    sidebar.style.display = "none";
-  } else {
-    sidebar.style.display = "flex";
-    mybutton.style.display = "block";
+  function scrollFunction() {
+    if (window.innerHeight + window.scrollY >= footer.offsetTop) {
+      mybutton.style.display = "none";
+    } else if (window.scrollY === 0) {
+      sidebar.style.display = "none";
+    } else {
+      sidebar.style.display = "flex";
+      mybutton.style.display = "block";
+    }
   }
-}
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+});
