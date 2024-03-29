@@ -1288,6 +1288,29 @@
     }
 
 
+        /*/////TRELLO BOARD////*/
+    
+        #trello-container {
+            /* margin: 100px 0; */
+            width: fit-content;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+    
+        .trello {
+            border: 4px solid #008b8b;
+            border-radius: 10px;
+            -moz-box-shadow: 0 0 5px #EEEEEE;
+            -webkit-box-shadow: 0 0 5px #EEEEEE;
+            box-shadow: 0 0 5px #EEEEEE;
+            width: 100%;
+            height: 500px;
+        }
+
+
 
      /* Optional: Add custom styles for the embedded Trello table */
      .trello-board iframe {
