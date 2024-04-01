@@ -427,7 +427,7 @@ body {
     align-self: baseline;
   }
 
-  .des-icons .fab{
+  .des-icons .fab, .tailwind-icon{
     color: whitesmoke;
     font-size: 2rem;
   }

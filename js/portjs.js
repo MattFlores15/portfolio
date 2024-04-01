@@ -82,10 +82,17 @@ function animateSkills() {
 // SLIDER
 
 let currentIndex = 0;
-const totalSlides = document.querySelectorAll('.vid_cont').length;
+const totalSlides = document.querySelectorAll('.home-case').length;
+let isMobile = false; // Variable to track if it's a mobile device
+
+// Function to check if the device screen width is below a certain threshold (e.g., for mobile devices)
+function checkMobile() {
+  const screenWidth = window.innerWidth;
+  isMobile = screenWidth <= 768; // Adjust the threshold as needed
+}
 
 function showSlide(index) {
-  const slides = document.querySelectorAll('.vid_cont');
+  const slides = document.querySelectorAll('.home-case');
   
   // Hide all slides
   slides.forEach(slide => {
@@ -105,7 +112,10 @@ function prevSlide() {
 }
 
 // Initial setup
-showSlide(currentIndex);
-setInterval(nextSlide, 5000);
+checkMobile(); // Check if it's a mobile device on page load
+if (!isMobile) { // Execute the slider only if it's not a mobile device
+  showSlide(currentIndex);
+  setInterval(nextSlide, 5000);
+}
 
 

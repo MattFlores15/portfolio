@@ -127,7 +127,7 @@ body {
   /*////////////////////Home Page//////////////////////*/
 
   /* Slider */
-  .container {
+  .first-container {
     z-index: -1;
     padding: 0 0 0 0;
     min-height: 100%;
@@ -392,10 +392,9 @@ body {
       font-size: 2.5rem;
     }
 
-    .tailwind-css{
-     width: 45px;
-     height: 50px;
-     align-self:center;
+    .devicon-tailwindcss-original{
+      color: #0A0C0E;
+      font-size: 2.5rem;
     }
 
     .skill .icon {
@@ -466,13 +465,13 @@ body {
   height: 50vh;
 }
 
-.vid_cont {
+.home-case {
   display: none;
   flex: 0 0 100%;
 }
 
 /* Container Styles */
-.int-c {
+.cases-home {
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -510,7 +509,7 @@ body {
   color: #EEEEEE;
 }
 
-#int-t {
+#case-title {
   font-weight: 700;
   cursor: default;
   font-family: "Nunito Sans", sans-serif;
@@ -521,8 +520,15 @@ body {
   letter-spacing: 1rem;
 }
 
-/* Web Content Styles */
-.web-content {
+.case-title{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.joint-efforts, .logichainge, .markr {
   display: flex;
   width: 50vw;
   justify-content: start;
@@ -531,8 +537,8 @@ body {
   padding: 20px;
 }
 
-/* Video Container Styles */
-.vid_cont {
+
+.home-case {
   display: flex;
   align-items: flex-start;
   width: 100%;
@@ -556,7 +562,7 @@ body {
 }
 
 /* Adjust the height of the containers inside each anchor tag */
-.vid_cont .web-content {
+.home-case .joint-efforts,  .home-case .logichainge, .home-case .markr {
   height: 100%;
   /* Adjust as needed */
 }
@@ -658,7 +664,7 @@ body {
 }
 
 /* Image Week Styles */
-.img-week h3 {
+.cases-container h3 {
   text-align: center;
   color: darkcyan;
   font-size: 2.8rem !important;
@@ -673,7 +679,7 @@ body {
 
 
 
-.page-wrap h3 {
+.cases-container h3 {
   text-align: center;
   cursor: default;
   color: darkcyan;
@@ -684,7 +690,7 @@ body {
   width: fit-content;
 }
 
-.page-wrap a {
+.cases-container a {
   text-decoration: none;
 }
 

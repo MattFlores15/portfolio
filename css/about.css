@@ -187,8 +187,6 @@ body {
     flex-direction: column;
   }
 
-  
-
   #about_me {
     font-size: 6rem;
     position: relative;
@@ -207,96 +205,6 @@ body {
     color: #008b8b;
     text-shadow: 1px 1px 2px cornsilk;
   }
-
-  
-
-
-
-  /* .skills-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    height: 100vh;
-    background-color: #0A0C0E;
-    align-items: center;
-  }
-
-  
-
-  .skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-     .chart-container {
-      align-self: center;
-       width: 750px;
-       margin: 20px auto;
-     }
-  
-     .chart {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: flex-start;
-       gap: 25px;
-       height: fit-content;
-       overflow: hidden;
-     }
-
-     .chart .fab, .fas{
-      color: #EEEEEE;
-      font-size: 2rem;
-     }
-
-     .chart .icon{
-      width: 30px;
-      justify-content: center;
-      display: flex;
-     }
-
-     .fa-laptop-code{
-        font-size: 1.6rem;
-     }
-
-
-     .bars{
-      display: flex;
-      width: 800px;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 20px;
-     } */
-  
-     /* .bar {
-       width: 0;
-       height: 25px;
-       border-radius: 1px;
-       box-shadow: 1px 1px 2px #EEEEEE;
-       background-color: #008b8b;
-       background-image: url(../images/Banner.jpg);
-       background-repeat: no-repeat;
-       background-position: bottom;
-       transition: width 1s ease-in-out;
-     }
-  
-     .label {
-       display: inline-block;
-       width: 120px;
-       border-right: #0A0C0E solid 1px;
-       align-self: center;
-       text-transform: uppercase;
-       text-shadow: 1px 1px 2px #0A0C0E;
-       color: #EEEEEE;
-       font-weight: 700;
-       font-size: 0.9rem;
-       padding-left: 10px;
-     } */
-  
 
   /*//Description container//*/
 
@@ -328,17 +236,11 @@ body {
       max-width: 100%;
       /* The image used */
       background-color: #0A0C0E;
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("../images/IMG_20200201_162853_555_magic.png"); */
-      
-        /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: right;
         background-repeat: no-repeat;
         background-size: auto;
         overflow: hidden;
-    
-      /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
       @media only screen and (max-device-width: 1366px) {
         .parallax {
           background-attachment: scroll;
@@ -395,13 +297,9 @@ body {
     justify-content: center;
     display: flex;
     margin: 0 !important;
-    /* margin-bottom: 50px !important; */
-    /* bottom: 12%; */
-    /* border-radius: 20px; */
     position: relative;
     padding-bottom: 0;
     width: 90%;
-    /* border: 4px solid #008b8b; */
     opacity: 0.8;
     height: fit-content;
     align-items: center;
@@ -419,8 +317,6 @@ body {
     padding: 20px;
     background-color: transparent;
     max-width: max-content;
-    /* border-radius: 10px;
-    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.7), 0 7px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 
   #resume-button {
@@ -438,8 +334,6 @@ body {
   }
 
   #resume-button:hover {
-    /* border-top: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE; */
     background-color: #008b8b;
   }
   /*//Second description//*/
@@ -447,8 +341,6 @@ body {
   #r2 {
     align-self: flex-end;
     float: inline-end !important;
-    /* align-items: flex-end; */
-    /* border: 4px solid whitesmoke; */
     opacity: 0.8;
   }
 
@@ -464,8 +356,6 @@ body {
     padding: 20px;
     background-color: transparent;
     max-width: max-content;
-    /* border-radius: 10px;
-    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.7), 0 7px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 
   /*//Third description//*/
@@ -486,8 +376,6 @@ body {
     /* margin: auto; */
     padding: 20px;
     max-width: max-content;
-    /* border-radius: 10px;
-    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.7), 0 7px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 
  /*//Description Images//*/
@@ -501,14 +389,6 @@ body {
     /* margin: auto; */
   }
 
-  /* .img-hover-zoom2 {
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    border: 2px #008b8b;
-  } */
-
-
   /*Blur-zoom container*/
   .img-hover-zoom--blur img {
     /* transition: transform 1s, filter 2s ease-in-out; */
@@ -518,11 +398,6 @@ body {
     /* border: 5px #EEEEEE solid; */
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.7), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
-  /*The Transformation*/
-  /* .img-hover-zoom--blur:hover img {
-    transform: scale(1);
-  } */
 
   /*//////////////////////EVENTS///////////////////////////*/
     .media_container {
