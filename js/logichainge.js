@@ -126,71 +126,71 @@ toggleArrows.forEach((toggleArrow, index) => {
 
 
  
-// Learning outcomes JSON object
-var learningOutcomes = {
-  "project-basics": ["Professional Duties"],
-  "project-overview": ["Situation-Orientation", "Professional Duties"],
-  "project-challenge": ["Situation-Orientation", "Investigative Problem Solving"],
-  "project-process": ["Future-Oriented Organisation", "Targeted Interaction", "Situation-Orientation", "Personal Leadership"],
-  "project-goals": ["Future-Oriented Organisation", "Investigative Problem Solving"],
-  "project-research": ["Investigative Problem Solving", "Targeted Interaction"],
-  "project-design": ["Professional Duties", "Targeted Interaction", "Situation-Orientation"],
-  "project-development": ["Targeted Interaction", "Professional Duties", "Situation-Orientation", "Investigative Problem Solving"],
-  "project-results": ["Future-Oriented Organisation","Situation-Orientation", "Investigative Problem Solving"],
-  "project-conclusion": ["Personal Leadership", "Future-Oriented Organisation","Professional Duties", "Investigative Problem Solving"],
-};
+// // Learning outcomes JSON object
+// var learningOutcomes = {
+//   "project-basics": ["Professional Duties"],
+//   "project-overview": ["Situation-Orientation", "Professional Duties"],
+//   "project-challenge": ["Situation-Orientation", "Investigative Problem Solving"],
+//   "project-process": ["Future-Oriented Organisation", "Targeted Interaction", "Situation-Orientation", "Personal Leadership"],
+//   "project-goals": ["Future-Oriented Organisation", "Investigative Problem Solving"],
+//   "project-research": ["Investigative Problem Solving", "Targeted Interaction"],
+//   "project-design": ["Professional Duties", "Targeted Interaction", "Situation-Orientation"],
+//   "project-development": ["Targeted Interaction", "Professional Duties", "Situation-Orientation", "Investigative Problem Solving"],
+//   "project-results": ["Future-Oriented Organisation","Situation-Orientation", "Investigative Problem Solving"],
+//   "project-conclusion": ["Personal Leadership", "Future-Oriented Organisation","Professional Duties", "Investigative Problem Solving"],
+// };
 
-// Mapping of learning outcomes to colors
-var learningOutcomeColors = {
-  "Professional Duties": "darkmagenta",
-  "Situation-Orientation": "darkslateblue",
-  "Future-Oriented Organisation": "darkgreen",
-  "Investigative Problem Solving": "darkorange",
-  "Personal Leadership": "darkred",
-  "Targeted Interaction": "pink",
-};
+// // Mapping of learning outcomes to colors
+// var learningOutcomeColors = {
+//   "Professional Duties": "darkmagenta",
+//   "Situation-Orientation": "darkslateblue",
+//   "Future-Oriented Organisation": "darkgreen",
+//   "Investigative Problem Solving": "darkorange",
+//   "Personal Leadership": "darkred",
+//   "Targeted Interaction": "pink",
+// };
 
-var tagColors = [ "darkmagenta", "darkslateblue", "darkgreen", "darkorange", "darkred", "pink" ];
+// var tagColors = [ "darkmagenta", "darkslateblue", "darkgreen", "darkorange", "darkred", "pink" ];
 
-// Function to create the tags and add them to the appropriate sections
-function addLearningOutcomeTags() {
-  var i = 0; // Counter for tagColors array
-  for (var sectionId in learningOutcomes) {
-    if (learningOutcomes.hasOwnProperty(sectionId)) {
-      var section = document.getElementById(sectionId);
-      var tags = learningOutcomes[sectionId];
+// // Function to create the tags and add them to the appropriate sections
+// function addLearningOutcomeTags() {
+//   var i = 0; // Counter for tagColors array
+//   for (var sectionId in learningOutcomes) {
+//     if (learningOutcomes.hasOwnProperty(sectionId)) {
+//       var section = document.getElementById(sectionId);
+//       var tags = learningOutcomes[sectionId];
 
-      var learningOutcomeDiv = section.querySelector('.learning-outcomes');
-      var tagDiv = document.createElement('div');
-      tagDiv.className = 'tags';
+//       var learningOutcomeDiv = section.querySelector('.learning-outcomes');
+//       var tagDiv = document.createElement('div');
+//       tagDiv.className = 'tags';
 
-      tags.forEach(function(tag) {
-        var tagSpan = document.createElement('span');
-        tagSpan.textContent = tag;
-        tagSpan.className = 'tag';
+//       tags.forEach(function(tag) {
+//         var tagSpan = document.createElement('span');
+//         tagSpan.textContent = tag;
+//         tagSpan.className = 'tag';
 
-        // Apply color from the learningOutcomeColors object
-        var color = learningOutcomeColors[tag];
-        if (color) {
-          tagSpan.style.backgroundColor = color;
-        } else {
-          tagSpan.style.backgroundColor = tagColors[i]; // Apply color from the tagColors array
-          i++;
-          if (i >= tagColors.length) {
-            i = 0;
-          }
-        }
+//         // Apply color from the learningOutcomeColors object
+//         var color = learningOutcomeColors[tag];
+//         if (color) {
+//           tagSpan.style.backgroundColor = color;
+//         } else {
+//           tagSpan.style.backgroundColor = tagColors[i]; // Apply color from the tagColors array
+//           i++;
+//           if (i >= tagColors.length) {
+//             i = 0;
+//           }
+//         }
 
-        tagDiv.appendChild(tagSpan);
-      });
+//         tagDiv.appendChild(tagSpan);
+//       });
 
-      learningOutcomeDiv.appendChild(tagDiv);
-    }
-  }
-}
+//       learningOutcomeDiv.appendChild(tagDiv);
+//     }
+//   }
+// }
 
-// Call the function to add the learning outcome tags
-addLearningOutcomeTags();
+// // Call the function to add the learning outcome tags
+// addLearningOutcomeTags();
 
 
 

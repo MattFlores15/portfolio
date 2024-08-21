@@ -191,6 +191,10 @@
          align-items: center;
      }
 
+    #divider1-je {
+        display: none !important;
+    }
+
      .section-divider {
          width: 65%;
          border: none;
