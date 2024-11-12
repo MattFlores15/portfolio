@@ -794,7 +794,7 @@ body {
  }
 
 
- .fa-x-twitter,
+ .fa-figma,
  .fa-github {
    font-size: 20px !important;
  }
@@ -825,7 +825,7 @@ body {
  }
 
  ul li:nth-child(2) a:before {
-   background: #55acee;
+   background: #874FFF;
  }
 
  ul li:nth-child(3) a:before {

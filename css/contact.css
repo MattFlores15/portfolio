@@ -189,10 +189,17 @@ body {
     .contact-info li {
       font-size: 1.1rem;
       margin: 5px;
+      display: flex;
+      align-items: center;
     }
 
     .contact-info li .fa-brands{
-      font-size: 1.5rem;
+      font-size: 1.6rem !important;
+      align-self: center;
+    }
+
+    .contact-info li #figma{
+      color: #874FFF;
     }
 
     .contact-info li #linkedin{
@@ -362,7 +369,7 @@ body {
  }
 
 
- .fa-x-twitter,
+ .fa-figma,
  .fa-github {
    font-size: 20px !important;
  }
@@ -393,7 +400,7 @@ body {
  }
 
  ul li:nth-child(2) a:before {
-   background: #55acee;
+  background: #874FFF;
  }
 
  ul li:nth-child(3) a:before {

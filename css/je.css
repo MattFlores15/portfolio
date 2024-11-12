@@ -1673,7 +1673,7 @@
      }
 
 
-     .fa-x-twitter,
+     .fa-figma,
      .fa-github {
          font-size: 20px !important;
      }
@@ -1703,9 +1703,9 @@
          background: #c93c72;
      }
 
-     ul li:nth-child(2) a:before {
-         background: #55acee;
-     }
+    ul li:nth-child(2) a:before {
+        background: #874FFF;
+    }
 
      ul li:nth-child(3) a:before {
          background: #0077b5;
