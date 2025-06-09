@@ -858,7 +858,7 @@ body {
    /* color: darkcyan; */
    position: absolute;
    width: 100%;
-   border-top: orange 2px solid !important;
+   border-top: red 2px solid !important;
    padding-top: 30px;
    text-align: center;
 
