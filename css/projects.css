@@ -209,7 +209,7 @@ body {
     align-items: center;
     gap: 50px;
     height: auto;
-    width: 90%;
+    width: 40vw;
     padding: 20px;
     border: #008b8b 4px solid;
     border-radius: 10px;
@@ -516,9 +516,10 @@ body {
   }
   .page-wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 50px;
-    width: fit-content;
+    width: 80vw;
     padding: 10px;
     align-items: center;
     background: transparent;
